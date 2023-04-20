@@ -1,46 +1,29 @@
-# Introdução
+# FutScore
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+## Documentação de Contexto
+
+O futebol é uma paixão nacional no Brasil e movimenta não apenas os estádios, mas também a economia, o turismo e o entretenimento. Diante disso, torna-se fundamental a existência de uma plataforma que ofereça informações atualizadas e completas sobre o universo do futebol brasileiro para os amantes desse esporte.
+
+Nesse contexto, o aplicativo FutScore surge como uma solução acessível e abrangente para os fãs do futebol brasileiro, oferecendo placares ao vivo, tabelas, jogos futuros, informações sobre times e muito mais. O objetivo é fornecer aos usuários um ambiente digital seguro e confiável, onde eles possam se manter informados e engajados com o esporte que amam.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O problema que o aplicativo FutScore busca resolver é a fragmentação e a falta de informações confiáveis sobre o futebol brasileiro nos canais tradicionais e nas redes sociais. Com tantas fontes de informação disponíveis, os usuários enfrentam dificuldades em encontrar um canal confiável e atualizado que possam acessar de maneira rápida e prática.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral do FutScore é a criação de um aplicativo completo e atualizado sobre o futebol brasileiro, oferecendo aos usuários informações precisas e em tempo real, melhorando sua experiência e interação com o esporte.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+
+- Disponibilizar informações atualizadas sobre placares, tabelas, jogos futuros e informações sobre times;
+- Oferecer uma interface amigável e intuitiva para facilitar a navegação e interação dos usuários;
+- Desenvolver um aplicativo responsivo e adaptável para dispositivos móveis e desktops.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A crescente demanda por informações atualizadas e confiáveis sobre o futebol brasileiro evidencia a necessidade de um site como o FutScore. Além disso, a popularidade do esporte no país e a diversidade de campeonatos e times tornam o projeto ainda mais relevante e necessário para o público-alvo.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+## Público alvo
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
-## Público-Alvo
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público-alvo do aplicativo FutScore é composto por homens e mulheres, de diversas faixas etárias, que são apaixonados por futebol e desejam se manter informados sobre o universo do futebol brasileiro. O aplicativo é especialmente útil para aqueles que não têm tempo para acompanhar todas as notícias e atualizações de suas equipes e campeonatos favoritos, mas desejam se manter informados e engajados com o esporte.
