@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# FutScore
 
-`CURSO`
+Tecnólogo em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 10
 
-`SEMESTRE`
+1° Semestre de 2023
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+![futscore](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t10-futscore/blob/main/docs/img/futscore.jpg)
+
+O site FutScore surge como uma solução acessível e abrangente para os fãs do futebol brasileiro, oferecendo placares ao vivo, tabelas, jogos futuros, informações sobre times e muito mais. O objetivo é fornecer aos usuários um ambiente digital seguro e confiável, onde eles possam se manter informados e engajados com o esporte que amam.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+- Matheus Gonçalves de Oliveira Machado
+- Carlos Henrique Santos da Silva
+- Daphine Custodia de Almeida
+- Thiago Pontes Gazzinelli
+- Vinicius Henrique Alves Mariano
 
 ## Orientador
 
-* Nome completo do professor 1
+- Vitor Mangaravite
 
 ## Instruções de utilização
 
@@ -31,22 +34,20 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/03-Metodologia.md"> Metodologia</a></li>
 <li><a href="docs/04-Projeto de Interface.md"> Projeto de Interface</a></li>
 <li><a href="docs/05-Arquitetura da Solução.md"> Arquitetura da Solução</a></li>
-<li><a href="docs/06-Template padrão do Site.md"> Template padrão do Site</a></li>
+<li><a href="docs/06-Template Padrão da Aplicação.md"> Template Padrão da Aplicação</a></li>
 <li><a href="docs/07-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
 <li><a href="docs/08-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
 <li><a href="docs/09-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="docs/10-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
-<li><a href="docs/11-Referências.md"> Referências</a></li>
+<li><a href="docs/10-Plano de Testes de Usabilidade.md"> Plano de Testes de Usabilidade</a></li>
+<li><a href="docs/11-Registro de Testes de Usabilidade.md"> Registro de Testes de Usabilidade</a></li>
+<li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
+<li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
 
-# Hospedagem
+# Código
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+<li><a href="src/README.md"> Código Fonte</a></li>
 
-# Armazenamento do Código-Fonte
+# Apresentação
 
-* <a href="src/README.md">Código Fonte</a>
-
-# Armazenamento da Apresentação
-
-* <a href="presentation/README.md">Apresentação da solução</a>
+<li><a href="presentation/README.md"> Apresentação da solução</a></li>
