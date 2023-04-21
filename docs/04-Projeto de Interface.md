@@ -35,7 +35,7 @@ A página de Cadastro apresenta um formulário simples e objetivo, com campos ob
 
 A página de Recuperar Senha permite que o usuário redefina sua senha caso tenha esquecido.
 
-![Homepage](img/Recuperar senha.png)
+![Homepage](img/Recuperar_senha.png)
 
 ### Perfil
 
