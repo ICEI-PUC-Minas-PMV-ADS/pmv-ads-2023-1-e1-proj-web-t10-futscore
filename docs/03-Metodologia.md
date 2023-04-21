@@ -63,7 +63,7 @@ As ferramentas empregadas no projeto são:
 | Editor de Código | Visual Studio Code | https://code.visualstudio.com/ |
 | Ferramenta de comunicação | Discord | https://discord.com/ |
 | Gerenciamento do Projeto | Trello | https://trello.com/ |
-| Projeto de Interface e Wireframes | Figma | https://www.figma.com/ |
+| Projeto de Interface e Wireframes | Figma | [Figma](https://www.figma.com/file/2crrAwVAUNiEGkZegdR4eC/Untitled?node-id=0%3A1&t=Vh9gvJPr0k2SHAGD-1) |
 | Controle de Versão | Git | https://git-scm.com/ |
 | Repositório | GitHub | https://github.com/ |
 
