@@ -7,7 +7,7 @@ O projeto de interface do Futscore visa proporcionar uma experiência de usuári
 
 ![Exemplo de UserFlow](img/Userflow.png)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+A imagem acima apresenta o diagrama que ilustra o fluxo de interação do usuário pelas telas do sistema. As telas desse fluxo são detalhadas na seção de Wireframes abaixo.
 
 ## Wireframes
 
