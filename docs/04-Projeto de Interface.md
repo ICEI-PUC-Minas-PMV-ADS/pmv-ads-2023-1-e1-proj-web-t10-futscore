@@ -1,7 +1,7 @@
 
 # Projeto de Interface
 
-O projeto de interface do site de futebol visa proporcionar uma experiência de usuário intuitiva e agradável. Para isso, foram elaborados wireframes para cada página do site, seguindo as especificações funcionais e não funcionais definidas na documentação de especificação.
+O projeto de interface do Futscore visa proporcionar uma experiência de usuário intuitiva e agradável. Para isso, foram elaborados wireframes para cada página do site, seguindo as especificações funcionais e não funcionais definidas na documentação de especificação.
 
 ## User Flow
 
