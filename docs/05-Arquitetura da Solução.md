@@ -1,8 +1,6 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+O software do FutScore será estruturado em três componentes principais: HTML, CSS e JavaScript. Para fornecer os dados dos jogos, vamos utilizar uma API de futebol. A aplicação será hospedada no Heroku e os dados do usuário serão armazenados em Local Storage. Essa arquitetura permitirá que o site seja rápido, escalável e fácil de manter.
 
 ## Diagrama de componentes
 
