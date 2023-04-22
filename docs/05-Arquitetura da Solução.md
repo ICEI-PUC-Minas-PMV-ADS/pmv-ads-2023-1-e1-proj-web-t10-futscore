@@ -7,7 +7,7 @@ O software do FutScore será estruturado em três componentes principais: HTML, 
 Os componentes que fazem parte da solução são apresentados na imagem abaixo.
 
 ![Diagrama de Componentes](img/diagrama_de_componentes.png)
-<center>Arquitetura da Solução</center>
+### Arquitetura da Solução
 
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
