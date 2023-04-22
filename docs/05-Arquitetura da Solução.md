@@ -21,12 +21,12 @@ A solução implementada conta com os seguintes módulos:
 ## Tecnologias Utilizadas
 
 **Linguagens**: HTML, CSS, JavaScript.
-**IDEs de desenvolvimento**: Visual Studio Code
-Hospedagem**: Heroku
-**Repositório**: GitHub
-**Versionamento**: Git
-**Logo e imagens**: Canva
-**Templates**: MarvelApp e Figma
+**IDEs de desenvolvimento**: Visual Studio Code.
+Hospedagem**: Heroku.
+**Repositório**: GitHub.
+**Versionamento**: Git.
+**Logo e imagens**: Canva.
+**Templates**: MarvelApp e Figma.
 
 ## Hospedagem
 
