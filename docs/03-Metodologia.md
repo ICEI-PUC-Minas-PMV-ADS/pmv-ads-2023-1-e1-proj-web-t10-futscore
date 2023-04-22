@@ -42,6 +42,8 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
 
+![Trello](img/projeto_trello.png)
+
 **Recursos**: Lista que contém todos os recursos que serão utilizados no projeto, como bibliotecas, ferramentas, serviços, entre outros. Essa lista é importante para que todos os membros da equipe tenham conhecimento dos recursos disponíveis e possam utilizá-los de maneira eficiente no projeto.
 
 **Backlog**: Lista que contém todas as funcionalidades que serão desenvolvidas no projeto. O Product Owner é responsável por definir as funcionalidades que serão implementadas e priorizá-las de acordo com a necessidade do cliente e do negócio.
