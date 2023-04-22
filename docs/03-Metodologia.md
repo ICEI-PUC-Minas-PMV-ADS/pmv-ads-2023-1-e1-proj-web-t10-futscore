@@ -64,7 +64,7 @@ As ferramentas empregadas no projeto são:
 | --- | --- | --- |
 | Editor de Código | Visual Studio Code | https://code.visualstudio.com/ |
 | Ferramenta de comunicação | Discord | https://discord.com/ |
-| Gerenciamento do Projeto | Trello | https://trello.com/ |
+| Gerenciamento do Projeto | Trello | [Trello](https://trello.com/b/HRgUkTgD/futscore) |
 | Projeto de Interface e Wireframes | Figma | [Figma](https://www.figma.com/file/2crrAwVAUNiEGkZegdR4eC/Untitled?node-id=0%3A1&t=Vh9gvJPr0k2SHAGD-1) |
 | Controle de Versão | Git | https://git-scm.com/ |
 | Repositório | GitHub | [FutScore](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t10-futscore) |
