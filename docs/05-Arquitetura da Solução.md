@@ -10,7 +10,7 @@ Os componentes que fazem parte da solução são apresentados na imagem abaixo.
 ### Arquitetura da Solução
 
 A solução implementada conta com os seguintes módulos:
-- **Navegador** - Interface básica do sistema  
+- **Navegador** - Interface básica do sistema.
   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
    - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
      - **Credenciais** - Dados do usuário, como login e senha
@@ -22,7 +22,7 @@ A solução implementada conta com os seguintes módulos:
 
 **Linguagens**: HTML, CSS, JavaScript.
 **IDEs de desenvolvimento**: Visual Studio Code.
-Hospedagem**: Heroku.
+**Hospedagem**: Heroku.
 **Repositório**: GitHub.
 **Versionamento**: Git.
 **Logo e imagens**: Canva.
