@@ -9,6 +9,32 @@ body {
   font-family: 'Roboto',-apple-system, sans-serif;
   }
 
+  .container2 {
+    
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    
+}
+
+.container2 div {
+
+    
+    padding: 10px;
+    
+
+}
+
+.container2 div p img {
+
+    display: block;
+    justify-items: center;
+    width: 2cm;
+    height: 2cm;
+
+}
 nav {
   background-color: #30d152;
   height: 100%;
