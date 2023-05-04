@@ -9,31 +9,23 @@ body {
   font-family: 'Roboto',-apple-system, sans-serif;
   }
 
-  .container2 {
-    
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    margin: 20px;
-    width: 80%;
-    
+.campeonatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  gap: 150px;
 }
 
-.container2 div {
-
-    
-    padding: 10px;
-    
-
+.campeonatos div {    
+  padding: 10px;
 }
 
-.container2 div p img {
-
-    display: block;
-    justify-items: center;
-    width: 2cm;
-    height: 2cm;
-
+.campeonatos div img {
+  justify-items: center;
+  align-items: center;
+  width: 150px;
 }
 nav {
   background-color: #30d152;
