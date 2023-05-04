@@ -77,3 +77,18 @@ nav .buttons ul li:hover {
   width: 100%;
   display: block;
   }
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+}
+
+.placar {
+  margin: 0 10px;
+}
