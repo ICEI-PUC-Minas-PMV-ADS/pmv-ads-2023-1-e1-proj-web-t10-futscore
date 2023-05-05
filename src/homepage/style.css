@@ -13,20 +13,29 @@ body {
 .campeonatos {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
   border-radius: 10px;
   gap: 150px;
-}
-
-.campeonatos div {    
-  padding: 10px;
+  margin: 30px 0;
 }
 
 .campeonatos div img {
   justify-items: center;
   align-items: center;
   width: 80px;
+  height: 85px;
+}
+
+.campeonatos h5 {
+  margin-top: 15px;
+}
+
+.campeonatos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 nav {
   background-color: #30d152;
@@ -35,6 +44,7 @@ nav {
   position: relative;
   padding: 0 20px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 nav .container {
@@ -100,3 +110,7 @@ nav .buttons ul li:hover {
   margin: 0 10px;
 }
 
+.escudos {
+  width: 50px;
+  height: 62px;
+}
