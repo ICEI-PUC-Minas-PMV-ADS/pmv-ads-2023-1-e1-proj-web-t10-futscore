@@ -125,7 +125,20 @@ th, td {
 
 td {
   border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-top: 500px;
 }
 th {
   background-color: #f2f2f2;
+}
+
+#league-table img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 2px -110px;  
+}
+
+#league-table td {
+  padding-top: 10px;
 }

@@ -23,7 +23,7 @@
                 <div class="buttons">
                     <ul>
                         <li><a href="/src/index.html">Home</a></li>
-                        <li><a href="/src/tabelas.html">Campeonatos</a></li>
+                        <li><a href="/src/tabelaSerieA.html">Campeonatos</a></li>
                         <li><a href="#">Calendário</a></li>
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Login</a></li>
@@ -36,31 +36,35 @@
         <h2>Campeonatos</h2>
         <div class="campeonatos">
             <div>
-                <img src="/src/img/brasileirao.png" alt="brasileirao">
-                <h5>Brasileirão Série A</h5>
+                <a href="/src/tabelaSerieA.html">
+                    <img src="/src/img/brasileirao.png" alt="brasileirao">
+                    <h5>Brasileirão Série A</h5>
+                </a>
             </div>
             <div>
                 <img src="/src/img/Campeonato_Brasileiro_Série_B.png" alt="Série_B">
                 <h5>Série B</h5>
             </div>
             <div>
-                <img src="/src/img/conmebol-sul-americana.png" alt="conmebol-sul-americana">
-                <h5>Sul Americana</h5>
-                
-            </div>
-            <div>
-                <img src="/src/img/copa-do-brasil.png" alt="copa do brasil">
-                <h5>Copa do Brasil</h5>
+                <a href="/src/tabelaCDB.html">
+                    <img src="/src/img/copa-do-brasil.png" alt="copa do brasil">
+                    <h5>Copa do Brasil</h5>
+                </a>
             </div>
             <div>
                 <img src="/src/img/libert.png" alt="Libertadores">
                 <h5>Libertadores</h5>
+            </div>
+            <div>
+                <img src="/src/img/conmebol-sul-americana.png" alt="conmebol-sul-americana">
+                <h5>Sul Americana</h5> 
             </div>
         </div> 
         <table id="league-table">
             <thead>
               <tr>
                 <th>Clube</th>
+                <th></th>
                 <th>Pts</th>
                 <th>PJ</th>
                 <th>VIT</th>
@@ -80,7 +84,7 @@
 
 <script>
     const apiKey = 'test_a4ed96f60a5c43e957bf8c9349fde9'; // Replace with your actual API key
-    const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/10/tabela'; // Replace 10 with the appropriate league ID
+    const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/2/tabela'; // Replace 10 with the appropriate league ID
 
     fetch(endpoint, {
       headers: {
@@ -93,8 +97,17 @@
       data.forEach((team, index) => {
         const row = document.createElement('tr');
 
+        const positionCell = document.createElement('td');
+        positionCell.textContent = index + 1;
+        row.appendChild(positionCell);
+
         const teamCell = document.createElement('td');
-        teamCell.textContent = (index + 1) + ' ' + team.time.nome_popular;
+
+        const logo = document.createElement('img');
+        logo.src = team.time.escudo;
+
+        teamCell.appendChild(logo);
+        teamCell.append(team.time.nome_popular);
         row.appendChild(teamCell);
 
         const pointsCell = document.createElement('td');
