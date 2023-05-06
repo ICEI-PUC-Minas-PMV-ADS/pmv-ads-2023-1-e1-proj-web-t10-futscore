@@ -114,3 +114,18 @@ nav .buttons ul li:hover {
   width: 50px;
   height: 62px;
 }
+
+table {
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
