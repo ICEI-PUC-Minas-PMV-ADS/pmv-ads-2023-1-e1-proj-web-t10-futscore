@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+  
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  }
+
+.campeonatos {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  border-radius: 10px;
+  gap: 150px;
+  margin: 30px 0;
+}
+
+.campeonatos div img {
+  justify-items: center;
+  align-items: center;
+  width: 80px;
+  height: 85px;
+}
+
+.campeonatos h5 {
+  margin-top: 15px;
+}
+
+.campeonatos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  background-color: #30d152;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav .buttons ul,
+nav .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav .logo {
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav .logo a {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+nav .buttons ul li {
+  padding: 15px 20px;
+  }
+  
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  }
+
+nav .buttons ul li:hover {
+  cursor: pointer;
+  background-color: #36d959;
+  height: 100%;
+  width: 100%;
+  display: block;
+  }
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+}
+
+.placar {
+  margin: 0 10px;
+}
+
+.escudos {
+  width: 50px;
+  height: 62px;
+}
+
+table {
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-top: 500px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+#league-table img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 2px -110px;  
+}
+
+#league-table td {
+  padding-top: 10px;
+}
