@@ -142,3 +142,30 @@ th {
 #league-table td {
   padding-top: 10px;
 }
+.profile-sidebar {
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  height: 100vh;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin: 40px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+        
