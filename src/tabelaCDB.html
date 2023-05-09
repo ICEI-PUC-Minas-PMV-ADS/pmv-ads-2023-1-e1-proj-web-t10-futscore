@@ -18,7 +18,7 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <a href="/src/homepage/index.html">FutScore</a>
+                    <a href="/src/index.html">FutScore</a>
                 </div>
                 <div class="buttons">
                     <ul>
@@ -60,94 +60,102 @@
                 <h5>Sul Americana</h5> 
             </div>
         </div> 
-        <table id="league-table">
-            <thead>
-              <tr>
-                <th>Clube</th>
-                <th></th>
-                <th>Pts</th>
-                <th>PJ</th>
-                <th>VIT</th>
-                <th>E</th>
-                <th>DER</th>
-                <th>GM</th>
-                <th>GC</th>
-                <th>SG</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- The table will be populated with data from the API -->
-            </tbody>
-        </table> 
+        <div class="jogos">
+            <h2>Copa do Brasil</h2>
+            <div id="chaves-container"></div>
+        </div>
     </div>
+
+    <script>
+        const apiKey = 'live_e207e278abab23740ec112e6b0485d'; // Replace with your actual API key
+        const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/313';
+
+        function renderMatches(data, targetId) {
+            const container = document.getElementById(targetId);
+
+            data.chaves.forEach((chave, index) => {
+                const jogoDiv = document.createElement('div');
+                jogoDiv.classList.add('jogo');
+                jogoDiv.id = `chave-${index + 1}`;
+
+                const jogoIdaDiv = document.createElement('div');
+                jogoIdaDiv.classList.add('jogo-ida');
+
+                const jogoVoltaDiv = document.createElement('div');
+                jogoVoltaDiv.classList.add('jogo-volta');
+
+                const renderMatch = (partida) => {
+                    const infoDiv = document.createElement('div');
+                    infoDiv.classList.add('info');
+
+                    const dataDiv = document.createElement('div');
+                    dataDiv.classList.add('data');
+                    dataDiv.textContent = partida.data_realizacao && partida.hora_realizacao ? `${partida.data_realizacao} ${partida.hora_realizacao}` : 'A definir';
+                    infoDiv.appendChild(dataDiv);
+
+                    const localDiv = document.createElement('div');
+                    localDiv.classList.add('local');
+                    localDiv.textContent = partida.estadio ? partida.estadio.nome_popular : 'A definir';
+                    infoDiv.appendChild(localDiv);
+
+                    const timesDiv = document.createElement('div');
+                    timesDiv.classList.add('times');
+
+                    const mandanteDiv = document.createElement('div');
+                    mandanteDiv.classList.add('mandante');
+                    mandanteDiv.textContent = partida.time_mandante.nome_popular;
+
+                    const mandanteImg = document.createElement('img');
+                    mandanteImg.src = partida.time_mandante.escudo;
+                    mandanteImg.alt = partida.time_mandante.nome_popular;
+                    mandanteDiv.appendChild(mandanteImg);
+
+                    const placarDiv = document.createElement('div');
+                    placarDiv.classList.add('placar');
+                    placarMandante = partida.placar_mandante;
+                    placarVisitante = partida.placar_visitante;
+                    placarDiv.textContent = placarMandante && placarVisitante ? `${placarMandante} x ${placarVisitante}` : 'x';
+
+                    const visitanteDiv = document.createElement('div');
+                    visitanteDiv.classList.add('visitante');
+
+                    const visitanteImg = document.createElement('img');
+                    visitanteImg.src = partida.time_visitante.escudo;
+                    visitanteImg.alt = partida.time_visitante.nome_popular;
+                    visitanteDiv.appendChild(visitanteImg);
+
+                    visitanteDiv.insertAdjacentText('beforeend', partida.time_visitante.nome_popular);
+
+                    timesDiv.append(mandanteDiv, placarDiv, visitanteDiv);
+
+                    const matchDiv = document.createElement('div');
+                    matchDiv.appendChild(infoDiv);
+                    matchDiv.appendChild(timesDiv);
+
+                    return matchDiv;
+                };
+
+                jogoIdaDiv.appendChild(renderMatch(chave.partida_ida));
+                jogoVoltaDiv.appendChild(renderMatch(chave.partida_volta));
+
+                jogoDiv.append(jogoIdaDiv, jogoVoltaDiv);
+                container.appendChild(jogoDiv);
+            });
+        }
+
+        fetch(endpoint, {
+            headers: {
+                'Authorization': `Bearer ${apiKey}`
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            renderMatches(data, 'chaves-container');
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    </script>
 </body>
-
-<script>
-    const apiKey = 'test_a4ed96f60a5c43e957bf8c9349fde9'; // Replace with your actual API key
-    const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/2/tabela'; // Replace 10 with the appropriate league ID
-
-    fetch(endpoint, {
-      headers: {
-        'Authorization': `Bearer ${apiKey}`
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      const tableBody = document.querySelector('#league-table tbody');
-      data.forEach((team, index) => {
-        const row = document.createElement('tr');
-
-        const positionCell = document.createElement('td');
-        positionCell.textContent = index + 1;
-        row.appendChild(positionCell);
-
-        const teamCell = document.createElement('td');
-
-        const logo = document.createElement('img');
-        logo.src = team.time.escudo;
-
-        teamCell.appendChild(logo);
-        teamCell.append(team.time.nome_popular);
-        row.appendChild(teamCell);
-
-        const pointsCell = document.createElement('td');
-        pointsCell.textContent = team.pontos;
-        row.appendChild(pointsCell);
-        
-        const playedCell = document.createElement('td');
-        playedCell.textContent = team.jogos;
-        row.appendChild(playedCell);
-
-        const wonCell = document.createElement('td');
-        wonCell.textContent = team.vitorias;
-        row.appendChild(wonCell);
-
-        const drawnCell = document.createElement('td');
-        drawnCell.textContent = team.empates;
-        row.appendChild(drawnCell);
-
-        const lostCell = document.createElement('td');
-        lostCell.textContent = team.derrotas;
-        row.appendChild(lostCell);
-
-        const gfCell = document.createElement('td');
-        gfCell.textContent = team.gols_pro;
-        row.appendChild(gfCell);
-
-        const gaCell = document.createElement('td');
-        gaCell.textContent = team.gols_contra;
-        row.appendChild(gaCell);
-
-        const gdCell = document.createElement('td');
-        gdCell.textContent = team.saldo_gols;
-        row.appendChild(gdCell);
-
-        tableBody.appendChild(row);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
-</script>
 
 </html>
