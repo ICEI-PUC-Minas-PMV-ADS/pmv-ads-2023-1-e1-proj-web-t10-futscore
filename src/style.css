@@ -256,3 +256,8 @@ th {
   display: flex;
   align-items: center;
 }
+
+.campeonatos a {
+  text-decoration: none;
+  color: black;
+}
