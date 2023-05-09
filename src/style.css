@@ -167,10 +167,16 @@ th {
   margin: 0;
 }
 
-.time-do-coração {
-  width: 110px;
+
+.jogos .navegarGames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-
-
-        
+.jogos .navegarGames i {
+  font-size: 30px;
+  cursor: pointer;
+}
