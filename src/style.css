@@ -187,17 +187,26 @@ th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid silver;
-  padding: 0px 150px;
+  border-top: 1px solid #EAEDF2;
+  border-bottom: 1px solid #EAEDF2;
+  border-left: 1px solid #EAEDF2;
+  padding: 0px 10px;
+  width: 555px;
 }
 
+.jogos .jogo-volta {
+  border-right: 1px solid #EAEDF2;
+}
 .jogos .times {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 15px auto 15px 1fr;
+  align-items: center;
   margin-bottom: 30px;
   margin-top: 10px;
-  justify-content: center;
-  align-items: center;
+}
+
+.jogos .placar {
+  margin: 0;
 }
 
 .jogos .mandante,
@@ -227,4 +236,23 @@ th {
 .jogos .info .data {
   font-size: 15px;
   font-weight: bold;
+}
+
+.mandante {
+  grid-column: 1 / span 1;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.placar {
+  grid-column: 3 / span 1;
+  justify-self: center;
+}
+
+.visitante {
+  grid-column: 5 / span 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
 }
