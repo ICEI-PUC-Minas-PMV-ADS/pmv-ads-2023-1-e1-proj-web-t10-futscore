@@ -18,7 +18,7 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <a href="/src/homepage/index.html">FutScore</a>
+                    <a href="/src/index.html">FutScore</a>
                 </div>
                 <div class="buttons">
                     <ul>
@@ -60,94 +60,54 @@
                 <h5>Sul Americana</h5> 
             </div>
         </div> 
-        <table id="league-table">
-            <thead>
-              <tr>
-                <th>Clube</th>
-                <th></th>
-                <th>Pts</th>
-                <th>PJ</th>
-                <th>VIT</th>
-                <th>E</th>
-                <th>DER</th>
-                <th>GM</th>
-                <th>GC</th>
-                <th>SG</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- The table will be populated with data from the API -->
-            </tbody>
-        </table> 
+        <div class="jogos">
+            <h2>Copa do Brasil</h2>
+            <div>Chave 1</div>
+            <div class="jogo" id="chave-1">
+                <div class="jogo-ida">
+                    <div class="info">
+                        <div class="data">17/05/2023    21:30</div>
+                        <div class="local">Arena do Grêmio</div>
+                    </div>
+                    <div class="times">
+                        <div class="mandante">
+                            Grêmio
+                            <img src="img/escudos/Grêmio.png" alt="Grêmio">
+                        </div>
+                        <div class="placar">x</div>
+                        <div class="visitante">
+                            <img src="img/escudos/Cruzeiro.png" alt="Cruzeiro">
+                            Cruzeiro
+                        </div>
+                    </div>
+                </div>
+                <div class="jogo-volta">
+                    <div class="info">
+                        <div class="data">31/05/2023    16:00</div>
+                        <div class="local">Arena do Grêmio</div>
+                    </div>
+                    <div class="times">
+                        <div class="mandante">
+                            Cruzeiro
+                            <img src="img/escudos/Cruzeiro.png" alt="Cruzeiro">
+                        </div>
+                        <div class="placar">x</div>
+                        <div class="visitante">
+                            <img src="img/escudos/Grêmio.png" alt="Grêmio">
+                            Grêmio
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jogo" id="chave-2"></div>
+            <div class="jogo" id="chave-3"></div>
+            <div class="jogo" id="chave-4"></div>
+            <div class="jogo" id="chave-5"></div>
+            <div class="jogo" id="chave-6"></div>
+            <div class="jogo" id="chave-7"></div>
+            <div class="jogo" id="chave-8"></div>
+        </div>
     </div>
 </body>
-
-<script>
-    const apiKey = 'test_a4ed96f60a5c43e957bf8c9349fde9'; // Replace with your actual API key
-    const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/2/tabela'; // Replace 10 with the appropriate league ID
-
-    fetch(endpoint, {
-      headers: {
-        'Authorization': `Bearer ${apiKey}`
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      const tableBody = document.querySelector('#league-table tbody');
-      data.forEach((team, index) => {
-        const row = document.createElement('tr');
-
-        const positionCell = document.createElement('td');
-        positionCell.textContent = index + 1;
-        row.appendChild(positionCell);
-
-        const teamCell = document.createElement('td');
-
-        const logo = document.createElement('img');
-        logo.src = team.time.escudo;
-
-        teamCell.appendChild(logo);
-        teamCell.append(team.time.nome_popular);
-        row.appendChild(teamCell);
-
-        const pointsCell = document.createElement('td');
-        pointsCell.textContent = team.pontos;
-        row.appendChild(pointsCell);
-        
-        const playedCell = document.createElement('td');
-        playedCell.textContent = team.jogos;
-        row.appendChild(playedCell);
-
-        const wonCell = document.createElement('td');
-        wonCell.textContent = team.vitorias;
-        row.appendChild(wonCell);
-
-        const drawnCell = document.createElement('td');
-        drawnCell.textContent = team.empates;
-        row.appendChild(drawnCell);
-
-        const lostCell = document.createElement('td');
-        lostCell.textContent = team.derrotas;
-        row.appendChild(lostCell);
-
-        const gfCell = document.createElement('td');
-        gfCell.textContent = team.gols_pro;
-        row.appendChild(gfCell);
-
-        const gaCell = document.createElement('td');
-        gaCell.textContent = team.gols_contra;
-        row.appendChild(gaCell);
-
-        const gdCell = document.createElement('td');
-        gdCell.textContent = team.saldo_gols;
-        row.appendChild(gdCell);
-
-        tableBody.appendChild(row);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
-</script>
 
 </html>

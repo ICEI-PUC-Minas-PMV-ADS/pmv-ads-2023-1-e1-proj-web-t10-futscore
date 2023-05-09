@@ -167,5 +167,64 @@ th {
   margin: 0;
 }
 
+.jogos .jogo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        
+.jogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos .jogo-volta,
+.jogos .jogo-ida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
+  padding: 0px 150px;
+}
+
+.jogos .times {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos .mandante,
+.jogos .visitante {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jogos .jogo-volta img,
+.jogos .jogo-ida img {
+  width: 50px;
+}
+
+.jogos .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.jogos .info .local {
+  font-size: 12px;
+}
+
+.jogos .info .data {
+  font-size: 15px;
+  font-weight: bold;
+}
