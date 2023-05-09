@@ -167,6 +167,100 @@ th {
   margin: 0;
 }
 
+.jogos .jogo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos .jogo-volta,
+.jogos .jogo-ida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #EAEDF2;
+  border-bottom: 1px solid #EAEDF2;
+  border-left: 1px solid #EAEDF2;
+  padding: 0px 10px;
+  width: 555px;
+}
+
+.jogos .jogo-volta {
+  border-right: 1px solid #EAEDF2;
+}
+.jogos .times {
+  display: grid;
+  grid-template-columns: 1fr 15px auto 15px 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.jogos .placar {
+  margin: 0;
+}
+
+.jogos .mandante,
+.jogos .visitante {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jogos .jogo-volta img,
+.jogos .jogo-ida img {
+  width: 50px;
+}
+
+.jogos .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.jogos .info .local {
+  font-size: 12px;
+}
+
+.jogos .info .data {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mandante {
+  grid-column: 1 / span 1;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.placar {
+  grid-column: 3 / span 1;
+  justify-self: center;
+}
+
+.visitante {
+  grid-column: 5 / span 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+}
+
+.campeonatos a {
+  text-decoration: none;
+  color: black;
+}
 
 .jogos .navegarGames {
   display: flex;

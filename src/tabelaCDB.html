@@ -72,9 +72,6 @@
     </div>
 
     <script>
-        const apiKey = 'live_e207e278abab23740ec112e6b0485d'; // Replace with your actual API key
-        const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/313';
-
         function renderMatches(data, targetId) {
             const container = document.getElementById(targetId);
 
@@ -148,18 +145,61 @@
             });
         }
 
-        fetch(endpoint, {
+        const apiKey = 'live_e207e278abab23740ec112e6b0485d'; // Replace with your actual API key
+      
+        const arrowLeft = document.querySelector('.ri-arrow-left-s-line');
+        const arrowRight = document.querySelector('.ri-arrow-right-s-line');
+        const currentStageTitle = document.querySelector('.navegarGames h2');
+      
+        const gameStages = [
+          { name: 'Primeira Fase', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/310' },
+          { name: 'Segunda Fase', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/311' },
+          { name: 'Terceira Fase', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/312' },
+          { name: 'Oitavas de Final', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/313' },
+          { name: 'Quartas de Final', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/314' },
+          { name: 'Semi Final', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/315' },
+          { name: 'Final', endpoint: 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/316' },
+        ];
+      
+        let currentStageIndex = 3; // Comece com a fase "Oitavas de final" (índice 3)
+      
+        function updateCurrentStageTitle() {
+          currentStageTitle.textContent = gameStages[currentStageIndex].name;
+        }
+      
+        function fetchMatches(endpoint) {
+          fetch(endpoint, {
             headers: {
-                'Authorization': `Bearer ${apiKey}`
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            renderMatches(data, 'chaves-container');
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
+              'Authorization': `Bearer ${apiKey}`,
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              renderMatches(data, 'chaves-container');
+            })
+            .catch((error) => {
+              console.error('Error fetching data:', error);
+            });
+        }
+      
+        arrowLeft.addEventListener('click', () => {
+          if (currentStageIndex > 0) {
+            currentStageIndex--;
+            updateCurrentStageTitle();
+            fetchMatches(gameStages[currentStageIndex].endpoint);
+          }
         });
+      
+        arrowRight.addEventListener('click', () => {
+          if (currentStageIndex < gameStages.length - 1) {
+            currentStageIndex++;
+            updateCurrentStageTitle();
+            fetchMatches(gameStages[currentStageIndex].endpoint);
+          }
+        });
+      
+        updateCurrentStageTitle(); // Atualize o título da fase atual inicialmente
+        fetchMatches(gameStages[currentStageIndex].endpoint);
     </script>
 </body>
 
