@@ -274,3 +274,10 @@ th {
   font-size: 30px;
   cursor: pointer;
 }
+
+#loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}

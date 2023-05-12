@@ -83,63 +83,66 @@
 </body>
 
 <script>
-    const apiKey = 'test_a4ed96f60a5c43e957bf8c9349fde9'; // Replace with your actual API key
-    const endpoint = 'https://api.api-futebol.com.br/v1/campeonatos/10/tabela'; // Replace 10 with the appropriate league ID
+    const apiKey = 'Pvb4g3p2EhGipAUwu7s2N8fj7cG3IdOKyqhtgdsE69RtzJGdy3iXPHYpAWH6'; // Replace with your actual API key
+    const endpoint = 'https://api.sportmonks.com/v3/football/standings/live/leagues/648?include=participant;details.type'; // Replace 10 with the appropriate league ID
 
-    fetch(endpoint, {
+    const proxyURL = 'https://cors-anywhere.herokuapp.com/';
+
+    fetch(proxyURL + endpoint, {
       headers: {
-        'Authorization': `Bearer ${apiKey}`
+        'Authorization': `${apiKey}`,
       }
     })
     .then(response => response.json())
     .then(data => {
+      data = data.data;
       const tableBody = document.querySelector('#league-table tbody');
       data.forEach((team, index) => {
         const row = document.createElement('tr');
 
         const positionCell = document.createElement('td');
-        positionCell.textContent = index + 1;
+        positionCell.textContent = team.position;
         row.appendChild(positionCell);
 
         const teamCell = document.createElement('td');
 
         const logo = document.createElement('img');
-        logo.src = team.time.escudo;
+        logo.src = team.participant.image_path;
 
         teamCell.appendChild(logo);
-        teamCell.append(team.time.nome_popular);
+        teamCell.append(team.participant.name);
         row.appendChild(teamCell);
 
         const pointsCell = document.createElement('td');
-        pointsCell.textContent = team.pontos;
+        pointsCell.textContent = team.points;
         row.appendChild(pointsCell);
         
         const playedCell = document.createElement('td');
-        playedCell.textContent = team.jogos;
+        playedCell.textContent = team.details[0].value;
         row.appendChild(playedCell);
 
         const wonCell = document.createElement('td');
-        wonCell.textContent = team.vitorias;
+        wonCell.textContent = team.details[1].value;
         row.appendChild(wonCell);
 
         const drawnCell = document.createElement('td');
-        drawnCell.textContent = team.empates;
+        drawnCell.textContent = team.details[2].value;
         row.appendChild(drawnCell);
 
         const lostCell = document.createElement('td');
-        lostCell.textContent = team.derrotas;
+        lostCell.textContent = team.details[3].value;
         row.appendChild(lostCell);
 
         const gfCell = document.createElement('td');
-        gfCell.textContent = team.gols_pro;
+        gfCell.textContent = team.details[4].value;
         row.appendChild(gfCell);
 
         const gaCell = document.createElement('td');
-        gaCell.textContent = team.gols_contra;
+        gaCell.textContent = team.details[5].value;
         row.appendChild(gaCell);
 
         const gdCell = document.createElement('td');
-        gdCell.textContent = team.saldo_gols;
+        gdCell.textContent = team.details[18].value;
         row.appendChild(gdCell);
 
         tableBody.appendChild(row);
