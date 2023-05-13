@@ -9,6 +9,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>FutScore</title>
@@ -26,28 +27,34 @@
                         <li><a href="/src/index.html">Home</a></li>
                         <li><a href="/src/tabelaSerieA.html">Campeonatos</a></li>
                         <li><a href="/src/Calendario.html">Calendário</a></li>
-                        <li><a href="#">Perfil</a></li>
+                        <li><a href="/src/Perfil.html">Perfil</a></li>
                         <li><a href="#">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <div class="text-center">
-            <h2>Jogos de hoje</h2> 
+    <div class="container">
+        <div class="jogos">
+            <div class="navegarGames">
+                <i class="ri-arrow-left-s-line"></i>
+                <h2>13/05/2023</h2>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>   
+        </div>
+        <div id="chaves-container"></div>
     </div>
     <div class="container">
         <div class="row m-0 gy-5 align-items-center">
             <div class="col-sm-12 col-md-6">
                 <div class="card text-center">
                     <div class="card-header">
-                        <h5>Brasileirão Série A 18:00</h5>
+                        <h5>Brasileirão Série A&emsp;&emsp; 18:00</h5>
                     </div>
                     <div class="card-body">
-                        <span class="mx-2">Flamengo</span>
-                        <img class="escudos" src="/src/img/flamengo.png" alt="Flamengo">
-                        <span class="placar">     X    </span>
+                        <span class="mx-2">Botafogo</span>
+                        <img class="escudos" src="/src/img/escudos/Botafogo.png" alt="Botafogo">
+                        <span class="placar">&ensp;X&ensp;</span>
                         <img class="escudos" src="/src/img/cruzeiro.png" alt="Cruzeiro">
                         <span class="mx-2">Cruzeiro</span>
                     </div>
@@ -56,13 +63,12 @@
             <div class="col-sm-12 col-md-6">
                 <div class="card text-center">
                     <div class="card-header">
-                        <h5>Copa do Brasil</h5>
-                        <h5>20:30</h5>
+                        <h5>Copa do Brasil&emsp;&emsp; 20:00</h5>
                     </div>
                     <div class="card-body">
-                        <span class="mx-2">Corinthians</span>
-                        <img class="escudos" src="/src/img/Corinthians.png" alt="Corinthians">
-                        <span class="placar"> - </span>
+                        <span class="mx-2">Bahia</span>
+                        <img class="escudos" src="/src/img/escudos/Bahia.png" alt="Bahia">
+                        <span class="placar">&ensp;-&ensp;</span>
                         <img class="escudos" src="/src/img/Atletico Mineiro.png" alt="Atlético-MG">
                         <span class="mx-2">Atlético-MG</span>
                     </div>
@@ -72,12 +78,12 @@
             <div class="col-sm-12 col-md-6">
                 <div class="card text-center">
                     <div class="card-header">
-                        <h5>09/05/2023 Libertadores 21:00</h5>
+                        <h5> Libertadores&emsp;&emsp; 21:30 </h5>
                     </div>
                     <div class="card-body">
-                        <span class="mx-2">Fluminense</span>
-                        <img class="escudos" src="/src/img/Fluminense.png" alt="Fluminense">
-                        <span class="placar"> - </span>
+                        <span class="mx-2">Internacional</span>
+                        <img class="escudos" src="/src/img/escudos/Internacional.png" alt="Internacional">
+                        <span class="placar">&ensp;-&ensp;</span>
                         <img class="escudos" src="/src/img/River Plate.png" alt="River Plate">
                         <span class="mx-2">River Plate</span>
                         
@@ -87,12 +93,12 @@
             <div class="col-sm-12 col-md-6">
                 <div class="card text-center">
                     <div class="card-header">
-                        <h5>Sul Americana</h5>
+                        <h5>Sul Americana&emsp;&emsp; 22:30</h5>
                     </div>
                     <div class="card-body">
-                        <span class="mx-2">Fortaleza</span>
-                        <img class="escudos" src="/src/img/Fortaleza.png" alt="Fortaleza">
-                        <span class="placar"> - </span>
+                        <span class="mx-2">São Paulo</span>
+                        <img class="escudos" src="/src/img/escudos/São Paulo.png" alt="São Paulo">
+                        <span class="placar">&ensp;-&ensp;</span>
                         <img class="escudos" src="/src/img/San Lorenzo.png" alt="San Lorenzo">
                         <span class="mx-2">San Lorenzo</span>
                     </div>
