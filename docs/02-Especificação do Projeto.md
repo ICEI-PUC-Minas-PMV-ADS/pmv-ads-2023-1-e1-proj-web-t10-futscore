@@ -39,9 +39,10 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | ID    | Descrição                                                                                         | Prioridade |
 |-------|---------------------------------------------------------------------------------------------------|------------|
 | RF-01 | O site deve apresentar placares ao vivo de jogos de futebol | Alta       |
-| RF-02 | O site deve exibir tabelas e estatísticas das competições | Alta     |
-| RF-03 | O site deve permitir o acesso a calendários de jogos futuros e partidas | Média      |
-| RF-04 | O site deve oferecer a possibilidade de compartilhar informações nas redes sociais | Baixa      |
+| RF-02 | O site deve exibir tabelas das competições | Alta     |
+| RF-03 | O site deve exibir estatísticas dos jogos das competições | Alta     |
+| RF-04 | O site deve permitir o acesso a calendários de jogos futuros e partidas | Média      |
+| RF-05 | O site deve permitir que os usuários criem o seu perfil e tenha acesso a sua página de perfil personalizada | Baixa      |
 
 
 #### Requisitos não funcionais
