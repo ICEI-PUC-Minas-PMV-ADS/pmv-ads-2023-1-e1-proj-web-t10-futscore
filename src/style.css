@@ -280,3 +280,36 @@ th {
   align-items: center;
   min-height: 200px;
 }
+
+.imgBR img {
+  width: 100px;
+}
+
+.imgBR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.meuTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.perfil {
+  display: flex;
+  align-items: start;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.jogosPerfil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
