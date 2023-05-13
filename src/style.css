@@ -313,3 +313,8 @@ th {
   justify-content: center;
   text-align: center;
 }
+
+.meuTime img {
+  width: 200px;
+  height: 180px;
+}
