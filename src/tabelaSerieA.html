@@ -79,23 +79,41 @@
               <!-- The table will be populated with data from the API -->
             </tbody>
         </table> 
+        <div id="loading-spinner" class="d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
     </div>
 </body>
 
 <script>
-    const apiKey = 'Pvb4g3p2EhGipAUwu7s2N8fj7cG3IdOKyqhtgdsE69RtzJGdy3iXPHYpAWH6'; // Replace with your actual API key
-    const endpoint = 'https://api.sportmonks.com/v3/football/standings/live/leagues/648?include=participant;details.type'; // Replace 10 with the appropriate league ID
+    const apiKey = 'Pvb4g3p2EhGipAUwu7s2N8fj7cG3IdOKyqhtgdsE69RtzJGdy3iXPHYpAWH6'; 
+    const endpoint1 = 'https://api.sportmonks.com/v3/football/standings/live/leagues/648?include=participant';
+    const endpoint2 = 'https://api.sportmonks.com/v3/football/standings/live/leagues/648?include=details';
 
-    const proxyURL = 'https://cors-anywhere.herokuapp.com/';
+    const proxyURL = 'https://proxy.cors.sh/';
 
-    fetch(proxyURL + endpoint, {
-      headers: {
-        'Authorization': `${apiKey}`,
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      data = data.data;
+    const loadingSpinner = document.getElementById('loading-spinner');
+    
+    loadingSpinner.classList.remove('d-none');
+
+    Promise.all([
+      fetch(proxyURL + endpoint1, {
+        headers: {
+          'Authorization': `${apiKey}`,
+          'x-cors-api-key': 'temp_12da3184d2de5caec4d790a3dd9119db'
+        }
+      }).then(response => response.json()),
+      fetch(proxyURL + endpoint2, {
+        headers: {
+          'Authorization': `${apiKey}`,
+          'x-cors-api-key': 'temp_12da3184d2de5caec4d790a3dd9119db'
+        }
+      }).then(response => response.json())
+    ]).then(([data1, data2]) => {
+      const data = data1.data.map((item, i) => ({...item, ...data2.data[i]}));
+
       const tableBody = document.querySelector('#league-table tbody');
       data.forEach((team, index) => {
         const row = document.createElement('tr');
@@ -147,10 +165,12 @@
 
         tableBody.appendChild(row);
       });
-    })
-    .catch(error => {
+
+      loadingSpinner.classList.add('d-none');
+    }).catch(error => {
       console.error('Error fetching data:', error);
     });
 </script>
+
 
 </html>

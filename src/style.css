@@ -313,3 +313,137 @@ th {
   justify-content: center;
   text-align: center;
 }
+
+#league-table {
+  margin-bottom: 50px;
+}
+
+.jogosHome .jogo {
+  gap: 30px;
+}
+
+.jogosHome .jogo-ida {
+  border-right: 1px solid #EAEDF2;
+}
+
+.jogosHome {
+  margin-top: 20px;
+}
+
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#searchQueryInput {
+  width: 80%;
+  height: 3.5rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  color: black;
+}
+
+.footer-bottom{
+  background: #30d152;
+  width: 100vw;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.footer-bottom .copyright p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-bottom .copyright p a{
+  color:black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.footer-menu a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-menu a:hover{
+color: gray;
+}
+
+@media (max-width:500px) {
+.footer-menu {
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}
