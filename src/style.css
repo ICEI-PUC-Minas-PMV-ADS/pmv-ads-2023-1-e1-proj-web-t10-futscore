@@ -127,18 +127,27 @@ td {
   border-bottom: 1px solid #ddd;
   vertical-align: middle;
   font-size: 20px;
-  margin-top: 500px;
 }
 th {
   background-color: #f2f2f2;
 }
 
+.rank {
+  display: inline-block;
+  width: 30px;  /* Adjust this value as needed */
+  text-align: right;
+}
+
+.serieA img, 
 #league-table img {
   width: 30px;
   height: 30px;
+  /*
   margin: 0 10px 2px -110px;  
+  */
 }
 
+.serieA td,
 #league-table td {
   padding-top: 10px;
 }
@@ -324,7 +333,7 @@ th {
 }
 
 
-
+.serieA,
 #league-table {
   margin-bottom: 50px;
 }
@@ -457,4 +466,8 @@ display: flex;
 margin-top: 10px;
 margin-bottom: 20px;
 }
+}
+
+.jogosHome .aovivo {
+  color: rgb(255, 0, 0);
 }
