@@ -34,6 +34,13 @@
         </nav>
     </header>
     <div class="container"> 
+        <div class="searchBar">
+            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Pesquise o seu time do coração" value="" />
+            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+              </svg>
+            </button>
+        </div>
         <h2>Campeonatos</h2>
         <div class="campeonatos">
             <div>
@@ -63,66 +70,106 @@
             </div>
         </div> 
         <h2>Ao Vivo</h2>
-        <div class="row m-0 gy-5 align-items-center">
-            <div class="col-sm-12 col-md-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h5>Brasileirão Série A</h5>
+        <div class="jogosHome">
+            <div class="jogos">
+                <div class="jogo" id="chave-1">
+                    <div class="jogo-ida">
+                        <div>
+                            <div class="info">
+                                <div class="data aovivo">Ao Vivo 88'</div>
+                                <div class="local">Mineirão</div>
+                            </div>
+                            <div class="times">
+                                <div class="mandante">
+                                    Cruzeiro
+                                    <img src="/src/img/escudos/Cruzeiro.png" alt="Cruzeiro">
+                                </div>
+                                <div class="placar">3 x 0</div>
+                                <div class="visitante">
+                                    <img src="/src/img/escudos/América-MG.png" alt="América-MG">
+                                    América-MG
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span class="mx-2">Flamengo</span>
-                        <img class="escudos" src="/src/img/flamengo.png" alt="Flamengo">
-                        <span class="placar">1 - 4</span>
-                        <img class="escudos" src="/src/img/cruzeiro.png" alt="Cruzeiro">
-                        <span class="mx-2">Cruzeiro</span>
+                    <div class="jogo-volta">
+                        <div>
+                            <div class="info">
+                                <div class="data aovivo">Ao Vivo 88'</div>
+                                <div class="local">Neo Química Arena</div>
+                            </div>
+                            <div class="times">
+                                <div class="mandante">
+                                    Corinthians
+                                    <img src="https://cdn.api-futebol.com.br/escudos/638d34a68419f.svg" alt="Corinthians">
+                                </div>
+                                <div class="placar">2 x 1</div>
+                                <div class="visitante">
+                                    <img src="https://cdn.api-futebol.com.br/escudos/638d3494f3380.svg" alt="Atlético-MG">
+                                    Atlético-MG
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div>                
             </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h5>Copa do Brasil</h5>
+            <div class="jogos">
+                <div class="jogo" id="chave-1">
+                    <div class="jogo-ida">
+                        <div>
+                            <div class="info">
+                                <div class="data aovivo">Ao Vivo 23'</div>
+                                <div class="local">Allianz Parque</div>
+                            </div>
+                            <div class="times">
+                                <div class="mandante">
+                                    Palmeiras
+                                    <img src="/src/img/escudos/Palmeiras.png" alt="Palmeiras">
+                                </div>
+                                <div class="placar">1 x 1</div>
+                                <div class="visitante">
+                                    <img src="/src/img/escudos/Flamengo.png" alt="Flamengo">
+                                    Flamengo
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span class="mx-2">Corinthians</span>
-                        <img class="escudos" src="/src/img/Corinthians.png" alt="Corinthians">
-                        <span class="placar">3 - 0</span>
-                        <img class="escudos" src="/src/img/Atletico Mineiro.png" alt="Atlético-MG">
-                        <span class="mx-2">Atlético-MG</span>
+                    <div class="jogo-volta">
+                        <div>
+                            <div class="info">
+                                <div class="data aovivo">Ao Vivo 23'</div>
+                                <div class="local">Neo Química Arena</div>
+                            </div>
+                            <div class="times">
+                                <div class="mandante">
+                                    Fluminense
+                                    <img src="/src/img/escudos/Fluminense.png" alt="Fluminense">
+                                </div>
+                                <div class="placar">1 x 0</div>
+                                <div class="visitante">
+                                    <img src="/src/img/escudos/Fluminense.png" alt="Santos">
+                                    Santos
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h5>Libertadores</h5>
-                    </div>
-                    <div class="card-body">
-                        <span class="mx-2">Fluminense</span>
-                        <img class="escudos" src="/src/img/Fluminense.png" alt="Fluminense">
-                        <span class="placar">3 - 0</span>
-                        <img class="escudos" src="/src/img/River Plate.png" alt="River Plate">
-                        <span class="mx-2">River Plate</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h5>Sul Americana</h5>
-                    </div>
-                    <div class="card-body">
-                        <span class="mx-2">Fortaleza</span>
-                        <img class="escudos" src="/src/img/Fortaleza.png" alt="Fortaleza">
-                        <span class="placar">3 - 3</span>
-                        <img class="escudos" src="/src/img/San Lorenzo.png" alt="San Lorenzo">
-                        <span class="mx-2">San Lorenzo</span>
-                    </div>
-                </div>
-            </div>
+                </div>  
+            </div>  
         </div>
     </div>
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-menu">
+                <a href="/src/index.html">Home</a>
+                <a href="/src/tabelaSerieA.html">Campeonatos</a>
+                <a href="/src/Calendario.html">Calendário</a>
+                <a href="/src/Perfil.html">Perfil</a>
+            </div>
+            <div class="copyright">
+                <p>copyright &copy; <a href="#">FutScore</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
