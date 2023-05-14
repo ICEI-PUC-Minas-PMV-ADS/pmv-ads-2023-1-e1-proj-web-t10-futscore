@@ -314,6 +314,17 @@ th {
   text-align: center;
 }
 
+.meuTime img {
+  width: 200px;
+  height: 200px;
+}
+
+.escudperfil {
+  width: 60px;
+}
+
+
+
 #league-table {
   margin-bottom: 50px;
 }
