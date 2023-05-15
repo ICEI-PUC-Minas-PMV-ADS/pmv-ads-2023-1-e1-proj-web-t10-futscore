@@ -9,24 +9,37 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>FutScore</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <a href="/src/homepage/index.html">FutScore</a>
-                </div>
-                <div class="buttons">
-                    <ul>
-                        <li><a href="/src/index.html">Home</a></li>
-                        <li><a href="/src/tabelaSerieA.html">Campeonatos</a></li>
-                        <li><a href="/src/Calendario.html">Calendário</a></li>
-                        <li><a href="/src/Perfil.html">Perfil</a></li>
-                        <li><a href="#">Login</a></li>
+        <nav class="navbar navbar-expand-lg bg-green">
+            <div class="container-fluid container TheNavBar ms-auto">
+                <a class="navbar-brand" href="#">FutScore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="display: flex; justify-content: center; align-items: center;"><i class="ri-menu-line"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-size: 20px; font-weight: 500;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tabelaSerieA.html" style="font-size: 20px; font-weight: 500;">Campeonatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Calendario.html" style="font-size: 20px; font-weight: 500;">Calendário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Perfil.html" style="font-size: 20px; font-weight: 500;">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="font-size: 20px; font-weight: 500;">Login</a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -61,270 +74,286 @@
             </div>
         </div> 
         <!-- Desativado temporariamente >>  <table id="league-table"> -->
-        <table class="serieA">
-            <thead>
-              <tr>
-                <th>Clube</th>
-                <th></th>
-                <th>Pts</th>
-                <th>PJ</th>
-                <th>VIT</th>
-                <th>E</th>
-                <th>DER</th>
-                <th>GM</th>
-                <th>GC</th>
-                <th>SG</th>
-              </tr>
-            </thead>
-            <tbody>
+        <div class="tabelaSerieA">
+            <table class="serieA">
+                <thead>
                 <tr>
-                    <td><span class="rank">1.</span> <span><img src="/src/img/escudos/Botafogo.png"></span> Botafogo</td>
-                    <td></td>
-                    <td>15</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>12</td>
-                    <td>4</td>
-                    <td>8</td>
+                    <th>Clube</th>
+                    <th></th>
+                    <th>Pts</th>
+                    <th>PJ</th>
+                    <th>VIT</th>
+                    <th>E</th>
+                    <th>DER</th>
+                    <th>GM</th>
+                    <th>GC</th>
+                    <th>SG</th>
                 </tr>
-                <tr>
-                    <td><span class="rank">2.</span> <span><img src="/src/img/escudos/Palmeiras.png"></span> Palmeiras</td>
-                    <td></td>
-                    <td>14</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>16</td>
-                    <td>6</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">3.</span> <span><img src="/src/img/escudos/Fluminense.png"></span> Fluminense</td>
-                    <td></td>
-                    <td>13</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>12</td>
-                    <td>5</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">4.</span> <span><img src="/src/img/escudos/Atlético-MG.png"></span> Atlético-MG</td>
-                    <td></td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>5</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">5.</span> <span><img src="/src/img/escudos/Flamengo.png"></span> Flamengo</td>
-                    <td></td>
-                    <td>9</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>12</td>
-                    <td>9</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">6.</span> <span><img src="/src/img/escudos/Athletico-PR.png"></span> Athletico-PR</td>
-                    <td></td>
-                    <td>9</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">7.</span> <span><img src="/src/img/escudos/Cruzeiro.png"></span> Cruzeiro</td>
-                    <td></td>
-                    <td>9</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">8.</span> <span><img src="/src/img/escudos/Fortaleza.png"></span> Fortaleza</td>
-                    <td></td>
-                    <td>8</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">9.</span> <span><img src="/src/img/escudos/Santos.png"></span> Santos</td>
-                    <td></td>
-                    <td>8</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">10.</span> <span><img src="/src/img/escudos/Corinthians.png"></span> Corinthians</td>
-                    <td></td>
-                    <td>8</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">11.</span> <span><img src="/src/img/escudos/Goiás.png"></span> Goiás</td>
-                    <td></td>
-                    <td>8</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>-2</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">12.</span> <span><img src="/src/img/escudos/Ceara.png"></span> Ceara</td>
-                    <td></td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">13.</span> <span><img src="/src/img/escudos/Bahia.png"></span> Bahia</td>
-                    <td></td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>-2</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">14.</span> <span><img src="/src/img/escudos/Internacional.png"></span> Internacional</td>
-                    <td></td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>-1</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">15.</span> <span><img src="/src/img/escudos/Vasco.png"></span> Vasco</td>
-                    <td></td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>-1</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">16.</span> <span><img src="/src/img/escudos/Grêmio.png"></span> Grêmio</td>
-                    <td></td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>-3</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">17.</span> <span><img src="/src/img/escudos/Bragantino.png"></span> Bragantino</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>11</td>
-                    <td>-6</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">18.</span> <span><img src="/src/img/escudos/Avai.png"></span> Avai</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>7</td>
-                    <td>-5</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">19.</span> <span><img src="/src/img/escudos/Atlético-GO.png"></span> Atlético-GO</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>9</td>
-                    <td>-8</td>
-                </tr>
-                <tr>
-                    <td><span class="rank">20.</span> <span><img src="/src/img/escudos/São Paulo.png"></span> São Paulo</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>-5</td>
-                </tr>
-            </tbody>
-        </table> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="rank">1.</span> <span><img src="/src/img/escudos/Botafogo.png"></span> Botafogo</td>
+                        <td></td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">2.</span> <span><img src="/src/img/escudos/Palmeiras.png"></span> Palmeiras</td>
+                        <td></td>
+                        <td>14</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">3.</span> <span><img src="/src/img/escudos/Fluminense.png"></span> Fluminense</td>
+                        <td></td>
+                        <td>13</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>12</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">4.</span> <span><img src="/src/img/escudos/Atlético-MG.png"></span> Atlético-MG</td>
+                        <td></td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">5.</span> <span><img src="/src/img/escudos/Flamengo.png"></span> Flamengo</td>
+                        <td></td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">6.</span> <span><img src="/src/img/escudos/Athletico-PR.png"></span> Athletico-PR</td>
+                        <td></td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">7.</span> <span><img src="/src/img/escudos/Cruzeiro.png"></span> Cruzeiro</td>
+                        <td></td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">8.</span> <span><img src="/src/img/escudos/Fortaleza.png"></span> Fortaleza</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">9.</span> <span><img src="/src/img/escudos/Santos.png"></span> Santos</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">10.</span> <span><img src="/src/img/escudos/Corinthians.png"></span> Corinthians</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">11.</span> <span><img src="/src/img/escudos/Goiás.png"></span> Goiás</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>-2</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">12.</span> <span><img src="/src/img/escudos/Ceara.png"></span> Ceara</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">13.</span> <span><img src="/src/img/escudos/Bahia.png"></span> Bahia</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>-2</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">14.</span> <span><img src="/src/img/escudos/Internacional.png"></span> Internacional</td>
+                        <td></td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">15.</span> <span><img src="/src/img/escudos/Vasco.png"></span> Vasco</td>
+                        <td></td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">16.</span> <span><img src="/src/img/escudos/Grêmio.png"></span> Grêmio</td>
+                        <td></td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>-3</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">17.</span> <span><img src="/src/img/escudos/Bragantino.png"></span> Bragantino</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>11</td>
+                        <td>-6</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">18.</span> <span><img src="/src/img/escudos/Avai.png"></span> Avai</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">19.</span> <span><img src="/src/img/escudos/Atlético-GO.png"></span> Atlético-GO</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>-8</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank">20.</span> <span><img src="/src/img/escudos/São Paulo.png"></span> São Paulo</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>-5</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
         <div id="loading-spinner" class="d-none">
             <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
     </div>
+    <footer class="stickyFooter">
+        <div class="footer-bottom">
+            <div class="footer-menu">
+                <a href="/src/index.html">Home</a>
+                <a href="/src/tabelaSerieA.html">Campeonatos</a>
+                <a href="/src/Calendario.html">Calendário</a>
+                <a href="/src/Perfil.html">Perfil</a>
+            </div>
+            <div class="copyright">
+                <p>copyright &copy; <a href="#">FutScore</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 <script>
