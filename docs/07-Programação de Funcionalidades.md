@@ -37,7 +37,7 @@ Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasilei
 
 ![]()
 
-Nesta sessão, o usuário poderá ver as estatísticas completas do jogo de seu interesse.
+Nesta sessão, o usuário poderá ver as estatísticas completas do jogo do seu interesse.
 
 ### 3.1 Requisitos atendidos:
 * RF-03 O site deve exibir estatísticas dos jogos das competições.
