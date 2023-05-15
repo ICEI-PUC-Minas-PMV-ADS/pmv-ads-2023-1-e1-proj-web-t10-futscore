@@ -18,7 +18,7 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 * style.css
 
 ## 2. Campeonatos (RF-02)
-![Homepage](img/Campeonatotabela1)
+![Homepage](img/Campeonatotabela1.png)
 
 
 Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão serie A, Brasileirão serie B, Copa do Brasil, Libertadores e Sul-Americana.
