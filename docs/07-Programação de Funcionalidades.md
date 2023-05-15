@@ -7,7 +7,7 @@ do sistema. O respectivo endereço (URL) e outras orientações de acesso são s
 apresentadas na sequência.
 
 ## 1. Homepage (RF-01)
-!
+![Homepage](img/homepage1.png)
 
 Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acontecendo no momento.
 ### 1.1 Requisitos atendidos:
