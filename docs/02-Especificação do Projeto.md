@@ -42,8 +42,8 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-02 | O site deve exibir tabelas das competições | Alta     |
 | RF-03 | O site deve exibir estatísticas dos jogos das competições | Alta     |
 | RF-04 | O site deve permitir o acesso a calendários de jogos futuros e partidas | Média      |
-| RF-05 | O site deve permitir que os usuários criem o seu perfil e tenha acesso a sua página de perfil personalizada | Baixa      |
-
+| RF-05 | O site deve permitir que os usuários crie sua conta  | Baixa      |
+| RF-06 | O site deve permitir que os usuários tenha acesso a sua página de perfil personalizada | Baixa      |
 
 #### Requisitos não funcionais
 
