@@ -7,7 +7,7 @@ do sistema. O respectivo endereço (URL) e outras orientações de acesso são s
 apresentadas na sequência.
 
 ## 1. Homepage (RF-01)
-![Colocar Imagem ]()
+![Homepage] (img/
 
 Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acontecendo no momento.
 ### 1.1 Requisitos atendidos:
@@ -18,9 +18,8 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 * style.css
 
 ## 2. Campeonatos (RF-02)
-![Pré-Requisitos]()
-![Pré-Requisitos]()
-![Pré-Requisitos]()
+![Homepage] (img/calendario1.png)
+
 
 Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão serie A, Brasileirão serie B, Copa do Brasil, Libertadores e Sul-Americana.
 
