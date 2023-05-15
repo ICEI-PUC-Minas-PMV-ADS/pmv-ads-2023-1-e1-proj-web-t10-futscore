@@ -471,3 +471,104 @@ margin-bottom: 20px;
 .jogosHome .aovivo {
   color: rgb(255, 0, 0);
 }
+
+.login-bg{
+  background-color: #3FDE5E;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.page-container {
+background-color: #3FDE5E;
+height: 100%;
+width: 100%;
+}
+.login-container {
+background-color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+max-width: 500px;
+padding: 20px;
+margin-top: 100px;
+
+}
+.h1-rec {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 100px;
+}
+.h1-reg {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 130px;
+}
+.h1-log {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 120px;
+}
+.h2-log {
+color: #8190A5;
+font-family: Lato;
+font-size: 14px;
+line-height: 22px;
+width: 600px;
+margin-left: 180px;
+text-decoration: underline;
+}
+.h2-rec {
+color: #8190A5;
+font-family: Lato;
+font-size: 14px;
+line-height: 22px;
+width: 600px;
+margin-left: 130px;
+text-decoration: underline;
+}
+form {
+margin-top: 20px;
+}
+.label-a {
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+border: 1px solid #8492A6;
+border-radius: 5px;
+box-sizing: border-box;
+display: block;
+font-size: 16px;
+margin-bottom: 20px;
+margin-left: 120px;
+padding: 10px;
+width: 50%;
+}
+
+input[type="submit"] {
+background-color: #47525E;
+border-radius: 5px;
+width: 231px;
+height: 45px;
+color: #FFFFFF;
+font-family: Lato;
+font-size: 18px;
+line-height: 40px;
+text-align: center;
+margin-left: 120px;
+}
+a:visited {
+text-decoration: none;
+color: gray;
+}
