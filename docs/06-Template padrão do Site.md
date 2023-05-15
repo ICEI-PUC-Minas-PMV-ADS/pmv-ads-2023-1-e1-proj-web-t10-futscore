@@ -4,9 +4,22 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 ![Layout](img/Layout.png)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+O template criado está disponível no site http://github.com/..... e é composto pelos seguintes
+layouts:
+● Cabeçalho
+● Conteúdo de cada página
+● Rodapé
+
+Todas as paginas do site são responsivas.
+
+## Cabeçalho
+
+O cabeçalho do site apresenta o logotipo e os botões de navegação para as diferentes páginas do site.
+
+## Conteúdo
+
+Essa seção será dedicada ao conteúdo de cada página. Por exemplo, na página de tabelas dos campeonatos, será exibida uma tabela do campeonato selecionado. Cada página terá um conteúdo específico relacionado ao seu propósito, como placares ao vivo, perfil, entre outros.
+
+## Rodapé
+
+No rodapé do site, serão exibidos botões de acesso rápido para as principais páginas, além de uma seção de direitos autorais (copyright).
