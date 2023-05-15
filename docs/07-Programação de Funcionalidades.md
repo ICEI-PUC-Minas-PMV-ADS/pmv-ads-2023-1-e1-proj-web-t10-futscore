@@ -18,7 +18,7 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 * style.css
 
 ## 2. Campeonatos (RF-02)
-![Homepage](img/calendario1.png)
+![Homepage](img/Campeonatotabela1)
 
 
 Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão serie A, Brasileirão serie B, Copa do Brasil, Libertadores e Sul-Americana.
@@ -34,7 +34,7 @@ Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasilei
 
 ## 3. Estatisticas (RF-03)
 
-![]()
+![Homepage](img/
 
 Nesta sessão, o usuário poderá ver as estatísticas completas do jogo do seu interesse.
 
@@ -48,7 +48,7 @@ Nesta sessão, o usuário poderá ver as estatísticas completas do jogo do seu 
 
 ## 4. Calendário (RF-04)
 
-
+![Homepage](img/calendario1)
 
 Nesta sessão poderá consultar o calendario de futuros jogos.
 
@@ -63,7 +63,8 @@ Nesta sessão poderá consultar o calendario de futuros jogos.
 
 ## 5. Login (RF-05)
 
-![]()
+![Homepage](img/login1)
+![Homepage](img/cadastre1)
 
 Nesta sessão, o usuário poderá logar no site, caso não tenha conta, se cadrastrar para que tenha acesso ao perfil personalizado.
 
@@ -79,7 +80,7 @@ Nesta sessão, o usuário poderá logar no site, caso não tenha conta, se cadra
 
 ## 6. Perfil (RF-06)
 
-![]( )
+![Homepage](img/perfil1)
 
 Nesta sessão, o usuário que estiver logado, poderá ter acesso ao seu perfil personalizado com seu time do coração.
 
