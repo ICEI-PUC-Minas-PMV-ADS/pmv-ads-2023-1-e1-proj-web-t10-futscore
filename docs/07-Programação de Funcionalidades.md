@@ -21,7 +21,7 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 ![Homepage](img/Campeonatotabela1.png)
 
 
-Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão serie A, Brasileirão serie B, Copa do Brasil, Libertadores e Sul-Americana.
+Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão Série A, Brasileirão Série B, Copa do Brasil, Libertadores e Sul-Americana.
 
 ### 2.1 Requisitos atendidos:
 * RF-02  O site deve exibir tabelas das competições.
