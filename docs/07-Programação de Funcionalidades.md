@@ -1,13 +1,11 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades
 do sistema. O respectivo endereço (URL) e outras orientações de acesso são são
 apresentadas na sequência.
 
 ## 1. Homepage (RF-01)
-!
+![Homepage](img/homepage1.png)
 
 Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acontecendo no momento.
 ### 1.1 Requisitos atendidos:
@@ -21,7 +19,7 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 ![Homepage](img/Campeonatotabela1.png)
 
 
-Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão serie A, Brasileirão serie B, Copa do Brasil, Libertadores e Sul-Americana.
+Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasileirão Série A, Brasileirão Série B, Copa do Brasil, Libertadores e Sul-Americana.
 
 ### 2.1 Requisitos atendidos:
 * RF-02  O site deve exibir tabelas das competições.
@@ -30,7 +28,6 @@ Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasilei
 * style.css
 * tabelacdb.html
 * tabelaserieA.html
-* tabelaserieB.html
 
 ## 3. Estatisticas (RF-03)
 
