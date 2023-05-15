@@ -34,7 +34,7 @@ Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasilei
 
 ## 3. Estatisticas (RF-03)
 
-![Homepage](img/
+![Homepage](img/Estatisticas.png)
 
 Nesta sessão, o usuário poderá ver as estatísticas completas do jogo do seu interesse.
 
