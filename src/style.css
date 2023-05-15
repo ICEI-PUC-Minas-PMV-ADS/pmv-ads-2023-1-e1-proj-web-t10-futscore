@@ -16,8 +16,9 @@ body {
   align-items: start;
   text-align: center;
   border-radius: 10px;
-  gap: 150px;
+  gap: 100px;
   margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .campeonatos div img {
@@ -402,6 +403,7 @@ footer{
 }
 
 .footer-bottom{
+  margin-top: 50px;
   background: #30d152;
   width: 100vw;
   padding-top: 15px;
@@ -571,4 +573,58 @@ margin-left: 120px;
 a:visited {
 text-decoration: none;
 color: rgb(0, 0, 0);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.stickyFooter {
+  position: sticky;
+  top: 100%;
+}
+
+.TheNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbarNav {
+  margin-left: 570px;
+}
+
+@media (max-width: 1199.9px) {
+  #navbarNav {
+    margin-left: 390px;
+  }
+  .jogos .jogo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 991.9px) {
+  #navbarNav {
+    margin-left: 0px;
+  }
+  .jogos .jogo-ida,
+  .jogos .jogo-volta {
+    width: 100%;
+  }
+}
+
+.tabelaSerieA {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.serieA {
+  width: 100%;
+  min-width: 600px;  /* Adjust this value according to your needs */
+}
+
+.serieA img {
+  height: 30px;
+  width: 30px;
 }
