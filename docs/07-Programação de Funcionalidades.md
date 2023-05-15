@@ -30,7 +30,6 @@ Nesta sessão, o usuário poderá consultar as tebelas dos campeonatos: Brasilei
 * style.css
 * tabelacdb.html
 * tabelaserieA.html
-* tabelaserieB.html
 
 ## 3. Estatisticas (RF-03)
 
