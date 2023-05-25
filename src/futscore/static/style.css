@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+  
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  }
+
+.campeonatos {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  border-radius: 10px;
+  gap: 100px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.campeonatos div img {
+  justify-items: center;
+  align-items: center;
+  width: 80px;
+  height: 85px;
+}
+
+.campeonatos h5 {
+  margin-top: 15px;
+}
+
+.campeonatos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  background-color: #30d152;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav .buttons ul,
+nav .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav .logo {
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav .logo a {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+nav .buttons ul li {
+  padding: 15px 20px;
+  }
+  
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  }
+
+nav .buttons ul li:hover {
+  cursor: pointer;
+  background-color: #36d959;
+  height: 100%;
+  width: 100%;
+  display: block;
+  }
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+}
+
+.placar {
+  margin: 0 10px;
+}
+
+.escudos {
+  width: 50px;
+  height: 62px;
+}
+
+table {
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  font-size: 20px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.rank {
+  display: inline-block;
+  width: 30px;  /* Adjust this value as needed */
+  text-align: right;
+}
+
+.serieA img, 
+#league-table img {
+  width: 30px;
+  height: 30px;
+  /*
+  margin: 0 10px 2px -110px;  
+  */
+}
+
+.serieA td,
+#league-table td {
+  padding-top: 10px;
+}
+.profile-sidebar {
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  height: 100vh;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jogos .jogo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos .jogo-volta,
+.jogos .jogo-ida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #EAEDF2;
+  border-bottom: 1px solid #EAEDF2;
+  border-left: 1px solid #EAEDF2;
+  padding: 0px 10px;
+  width: 555px;
+}
+
+.jogos .jogo-volta {
+  border-right: 1px solid #EAEDF2;
+}
+.jogos .times {
+  display: grid;
+  grid-template-columns: 1fr 15px auto 15px 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.jogos .placar {
+  margin: 0;
+}
+
+.jogos .mandante,
+.jogos .visitante {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jogos .jogo-volta img,
+.jogos .jogo-ida img {
+  width: 50px;
+}
+
+.jogos .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.jogos .info .local {
+  font-size: 12px;
+}
+
+.jogos .info .data {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mandante {
+  grid-column: 1 / span 1;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.placar {
+  grid-column: 3 / span 1;
+  justify-self: center;
+}
+
+.visitante {
+  grid-column: 5 / span 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+}
+
+.campeonatos a {
+  text-decoration: none;
+  color: black;
+}
+
+.jogos .navegarGames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.jogos .navegarGames i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.imgBR img {
+  width: 100px;
+}
+
+.imgBR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.meuTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.perfil {
+  display: flex;
+  align-items: start;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.jogosPerfil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.meuTime img {
+  width: 200px;
+  height: 200px;
+}
+
+.escudperfil {
+  width: 60px;
+}
+
+
+.serieA,
+#league-table {
+  margin-bottom: 50px;
+}
+
+.jogosHome .jogo {
+  gap: 30px;
+}
+
+.jogosHome .jogo-ida {
+  border-right: 1px solid #EAEDF2;
+}
+
+.jogosHome {
+  margin-top: 20px;
+}
+
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#searchQueryInput {
+  width: 80%;
+  height: 3.5rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  color: black;
+}
+
+.footer-bottom{
+  margin-top: 50px;
+  background: #30d152;
+  width: 100vw;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.footer-bottom .copyright p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-bottom .copyright p a{
+  color:black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.footer-menu a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-menu a:hover{
+color: gray;
+}
+
+@media (max-width:500px) {
+.footer-menu {
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}
+
+.jogosHome .aovivo {
+  color: rgb(255, 0, 0);
+}
+
+.login-bg{
+  background-color: #3FDE5E;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.page-container {
+background-color: #3FDE5E;
+height: 100%;
+width: 100%;
+}
+.login-container {
+background-color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+max-width: 500px;
+padding: 20px;
+margin-top: 100px;
+
+}
+.h1-rec {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 100px;
+}
+.h1-reg {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 130px;
+}
+.h1-log {
+color: #47525E;
+font-family: Lato;
+font-size: 38px;
+line-height: 51px;
+width: 600px;
+margin-left: 120px;
+}
+.h2-log {
+color: #8190A5;
+font-family: Lato;
+font-size: 14px;
+line-height: 22px;
+width: 600px;
+margin-left: 180px;
+text-decoration: underline;
+}
+.h2-rec {
+color: #8190A5;
+font-family: Lato;
+font-size: 14px;
+line-height: 22px;
+width: 600px;
+margin-left: 130px;
+text-decoration: underline;
+}
+form {
+margin-top: 20px;
+}
+.label-a {
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+border: 1px solid #8492A6;
+border-radius: 5px;
+box-sizing: border-box;
+display: block;
+font-size: 16px;
+margin-bottom: 20px;
+margin-left: 120px;
+padding: 10px;
+width: 50%;
+}
+
+input[type="submit"] {
+background-color: #47525E;
+border-radius: 5px;
+width: 231px;
+height: 45px;
+color: #FFFFFF;
+font-family: Lato;
+font-size: 18px;
+line-height: 40px;
+text-align: center;
+margin-left: 120px;
+}
+a:visited {
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.stickyFooter {
+  position: sticky;
+  top: 100%;
+}
+
+.TheNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbarNav {
+  margin-left: 570px;
+}
+
+@media (max-width: 1199.9px) {
+  #navbarNav {
+    margin-left: 390px;
+  }
+  .jogos .jogo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 991.9px) {
+  #navbarNav {
+    margin-left: 0px;
+  }
+  .jogos .jogo-ida,
+  .jogos .jogo-volta {
+    width: 100%;
+  }
+}
+
+.tabelaSerieA {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.serieA {
+  width: 100%;
+  min-width: 600px;  /* Adjust this value according to your needs */
+}
+
+.serieA img {
+  height: 30px;
+  width: 30px;
+}
