@@ -143,15 +143,9 @@ th {
 #league-table img {
   width: 30px;
   height: 30px;
-  /*
-  margin: 0 10px 2px -110px;  
-  */
+  margin: 0 10px 0px -50px;  
 }
 
-.serieA td,
-#league-table td {
-  padding-top: 10px;
-}
 .profile-sidebar {
   background-color: #f8f9fa;
   border-right: 1px solid #dee2e6;
@@ -627,4 +621,8 @@ body {
 .serieA img {
   height: 30px;
   width: 30px;
+}
+
+td span {
+  vertical-align: middle;
 }

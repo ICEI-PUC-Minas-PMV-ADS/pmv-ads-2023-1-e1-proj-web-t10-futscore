@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="container"> 
+        <h2>Campeonatos</h2>
+        <div class="campeonatos">
+            {% load static %}
+
+            <div>
+                <a href="{% url 'serieA' %}">
+                    <img src="{% static 'img/brasileirao.png' %}" alt="brasileirao">
+                    <h5>Brasileirão Série A</h5>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'serieB' %}">
+                    <img src="{% static 'img/Campeonato_Brasileiro_Série_B.png' %}" alt="Série_B">
+                    <h5>Série B</h5>
+                </a>
+            </div>
+            <div>
+                <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
+                <h5>Copa do Brasil</h5>
+            </div>
+            <div>
+                <img src="{% static 'img/libert.png' %}" alt="Libertadores">
+                <h5>Libertadores</h5>
+            </div>
+            <div>
+                <img src="{% static 'img/conmebol-sul-americana.png' %}" alt="conmebol-sul-americana">
+                <h5>Sul Americana</h5> 
+            </div>            
+        </div> 
+        <div class="jogos">
+            <div class="navegarGames">
+                <i class="ri-arrow-left-s-line"></i>
+                <h2>Oitavas de Final</h2>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div id="chaves-container"></div>
+            <div id="loading-spinner" class="d-none">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

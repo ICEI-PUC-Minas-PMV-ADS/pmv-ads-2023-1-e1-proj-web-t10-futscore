@@ -27,10 +27,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" style="font-size: 20px; font-weight: 500;">Home</a>
+                        <a class="nav-link" href="{% url 'index' %}" style="font-size: 20px; font-weight: 500;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tabelaSerieA.html" style="font-size: 20px; font-weight: 500;">Campeonatos</a>
+                        <a class="nav-link" href="{% url 'serieA' %}" style="font-size: 20px; font-weight: 500;">Campeonatos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Calendario.html" style="font-size: 20px; font-weight: 500;">Calendário</a>
@@ -52,10 +52,8 @@
     <footer class="stickyFooter">
         <div class="footer-bottom">
             <div class="footer-menu">
-                <a href="/src/index.html">Home</a>
-                <a href="/src/tabelaSerieA.html">Campeonatos</a>
-                <a href="/src/Calendario.html">Calendário</a>
-                <a href="/src/Perfil.html">Perfil</a>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'serieA' %}">Campeonatos</a>
             </div>
             <div class="copyright">
                 <p>copyright &copy; <a href="#">FutScore</a></p>
