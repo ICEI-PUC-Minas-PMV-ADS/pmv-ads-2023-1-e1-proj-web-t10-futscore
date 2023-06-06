@@ -13,6 +13,16 @@
 
     <link rel="stylesheet" href="style.css">
     <title>FutScore</title>
+    <style>
+        
+
+        .containerr {
+            overflow: auto;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,141 +45,146 @@
             </div>
         </nav>
     </header>
-    <div class="jogos">
-        <div class="jogo" id="chave-1">
-            <div class="jogo-ida">
-                <div>
-                    <div class="info">
-                        <div class="data aovivo">Ao Vivo 88'</div>
-                        <div class="local">Mineirão</div>
-                    </div>
-                    <div class="times">
-                        <div class="mandante">
-                            Cruzeiro
-                            <img src="/src/img/escudos/Cruzeiro.png" alt="Cruzeiro">
+    <div id="jogoaovivo">
+        <div class="jogos">
+            <div class="jogo" id="chave-1">
+                <div class="jogo-ida">
+                    <div>
+                        <div class="info">
+                            <div class="data aovivo">Ao Vivo 88'</div>
+                            <div class="local">Mineirão</div>
                         </div>
-                        <div class="placar">3 x 0</div>
-                        <div class="visitante">
-                            <img src="/src/img/escudos/América-MG.png" alt="América-MG">
-                            América-MG
+                        <div class="times">
+                            <div class="mandante">
+                                Cruzeiro
+                                <img src="/src/img/escudos/Cruzeiro.png" alt="Cruzeiro">
+                            </div>
+                            <div class="placar">3 x 0</div>
+                            <div class="visitante">
+                                <img src="/src/img/escudos/América-MG.png" alt="América-MG">
+                                América-MG
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-    <div class="container">
-        
+    <div class="containerr">
+
         <div class="card text-center">
             <h1>Estatísticas da Partida</h1>
-    </div>
-    
-               
-    <table>
-        <tr>
-            <th></th>
-            <th>Time A</th>
-            <th>Time B</th>
-            
-        </tr>
-        <tr>
-            
-            <th>Posse de Bola</th>
-            <td>60%</td>
-            <td>40%</td>
-        </tr>
-        <tr>
-            <th>Total de Passes</th>
-            <td>228</td>
-            <td>235</td>
-            
-        </tr>
-        <tr>
-            <th>Passes Certos</th>
-            <td>83%</td>
-            <td>87%</td>
-            
-        </tr>
-        <tr>
-            <th>Passes errados</th>
-            <td>40</td>
-            <td>32</td>
-            
-        </tr>
-        <tr>
-            <th>Finalizações</th>
-            <td>3</td>
-            <td>5</td>
-            
-        </tr>
-        <tr>
-            <th>No Gol</th>
-            <td>1</td>
-            <td>3</td>
-                        
-        </tr>
-        <tr>
-            <th>Na trave</th>
-            <td>1</td>
-            <td>1</td>
-            
-        </tr>
-        <tr>
-            <th>Bloqueadas</th>
-            <td>1</td>
-            <td>4</td>
-            
-        </tr>
-        <tr>
-            <th>Penalti</th>
-            <td>0</td>
-            <td>0</td>
-            
-        </tr>
-        <tr>
-            <th>Escanteios</th>
-            <td>5</td>
-            <td>8</td>
-            
-        </tr>
-        <tr>
-            <th>Impedimentos</th>
-            <td>1</td>
-            <td>3</td>
-            
-        </tr>
-        <tr>
-            <th>Total de defesas</th>
-            <td>0</td>
-            <td>2</td>
-            
-        </tr>
-        <tr>
-            <th>Desarmes</th>
-            <td>9</td>
-            <td>12</td>
-            
-        </tr>
-        <tr>
-            <th>Faltas cometidas</th>
-            <td>7</td>
-            <td>8</td>
-            
-        </tr>
-        <tr>
-            <th>Cartão amarelo</th>
-            <td>1</td>
-            <td>2</td>
-            
-        </tr>
-        <tr>
-            <th>Cartão vermelho</th>
-            <td>0</td>
-            <td>0</td>
-            
-        </tr>
-    </table>
-    
+        </div>
+
+
+        <div id="container">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Time A</th>
+                    <th>Time B</th>
+
+                </tr>
+                <tr>
+
+                    <th>Posse de Bola</th>
+                    <td>60%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <th>Total de Passes</th>
+                    <td>228</td>
+                    <td>235</td>
+
+                </tr>
+                <tr>
+                    <th>Passes Certos</th>
+                    <td>83%</td>
+                    <td>87%</td>
+
+                </tr>
+                <tr>
+                    <th>Passes errados</th>
+                    <td>40</td>
+                    <td>32</td>
+
+                </tr>
+                <tr>
+                    <th>Finalizações</th>
+                    <td>3</td>
+                    <td>5</td>
+
+                </tr>
+                <tr>
+                    <th>No Gol</th>
+                    <td>1</td>
+                    <td>3</td>
+
+                </tr>
+                <tr>
+                    <th>Na trave</th>
+                    <td>1</td>
+                    <td>1</td>
+
+                </tr>
+                <tr>
+                    <th>Bloqueadas</th>
+                    <td>1</td>
+                    <td>4</td>
+
+                </tr>
+                <tr>
+                    <th>Penalti</th>
+                    <td>0</td>
+                    <td>0</td>
+
+                </tr>
+                <tr>
+                    <th>Escanteios</th>
+                    <td>5</td>
+                    <td>8</td>
+
+                </tr>
+                <tr>
+                    <th>Impedimentos</th>
+                    <td>1</td>
+                    <td>3</td>
+
+                </tr>
+                <tr>
+                    <th>Total de defesas</th>
+                    <td>0</td>
+                    <td>2</td>
+
+                </tr>
+                <tr>
+                    <th>Desarmes</th>
+                    <td>9</td>
+                    <td>12</td>
+
+                </tr>
+                <tr>
+                    <th>Faltas cometidas</th>
+                    <td>7</td>
+                    <td>8</td>
+
+                </tr>
+                <tr>
+                    <th>Cartão amarelo</th>
+                    <td>1</td>
+                    <td>2</td>
+
+                </tr>
+                <tr>
+                    <th>Cartão vermelho</th>
+                    <td>0</td>
+                    <td>0</td>
+
+                </tr>
+            </table>
+        </div>
+
     </div>
 
-    
+
 </body>
