@@ -14,12 +14,16 @@
                 </a>
             </div>
             <div>
-                <img src="{% static 'img/Campeonato_Brasileiro_Série_B.png' %}" alt="Série_B">
-                <h5>Série B</h5>
+                <a href="{% url 'serieB' %}">
+                    <img src="{% static 'img/Campeonato_Brasileiro_Série_B.png' %}" alt="Série_B">
+                    <h5>Série B</h5>
+                </a>
             </div>
             <div>
-                <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
-                <h5>Copa do Brasil</h5>
+                <a href="{% url 'CDB' 4 %}">
+                    <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
+                    <h5>Copa do Brasil</h5>
+                </a>
             </div>
             <div>
                 <img src="{% static 'img/libert.png' %}" alt="Libertadores">

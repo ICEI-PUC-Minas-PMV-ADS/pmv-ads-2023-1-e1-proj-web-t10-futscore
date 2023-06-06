@@ -33,33 +33,34 @@ def serieB(request):
 
     return render(request, 'tabelaSerieB.html', {'data': data})
 
-def CDB(request, stage):
-    stages = [
-        ('Primeira Fase', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/310'),
-        # ... other stages ...
+def CDB(request, fase):
+    fases = [
+        ('0', '0'),
+        ('primeira-fase', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/310'),
+        ('segunda-fase', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/311'),
+        ('terceira-fase', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/312'),
+        ('oitavas', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/313'),
+        ('semi', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/314'),
+        ('quartas', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/315'),
+        ('final', 'https://api.api-futebol.com.br/v1/campeonatos/2/fases/316'),
     ]
-    primeiraFase = 77461971
-    segundaFase = 77461970
-    terceiraFase = 77461969
-    oitavas = 77461968
-    quartas = 77461967
-    semi = 77461966
-    final = 77461965
-
 
     # Determine which stage we're at
-    current_stage = stages[stage]
+    fase_atual = fases[fase]
 
     # Fetch data from API
     headers = {'Authorization': 'Bearer live_f90ee7baae2db53750a917df263bf7'}
-    response = requests.get(current_stage[1], headers=headers)
+    response = requests.get(fase_atual[1], headers=headers)
     data = response.json()
 
     # Pass data to template
     context = {
-        'matches': data['chaves'],
-        'stage_name': current_stage[0],
-        'stage_index': stage,
-        'total_stages': len(stages),
+        'partidas': data['chaves'],
+        'fase': fase_atual[0],
+        'faseAtual': fase,
+        'faseAnterior': fase - 1,
+        'fasePosterior': fase + 1,
+        'fasesTotais': len(fases),
+        'fase_nome': data['nome'],
     }
-    return render(request, 'games.html', context)
+    return render(request, 'tabelaCDB.html', context)

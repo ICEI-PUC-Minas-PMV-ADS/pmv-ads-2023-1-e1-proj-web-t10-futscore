@@ -20,8 +20,10 @@
                 </a>
             </div>
             <div>
-                <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
-                <h5>Copa do Brasil</h5>
+                <a href="{% url 'CDB' 4 %}">
+                    <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
+                    <h5>Copa do Brasil</h5>
+                </a>
             </div>
             <div>
                 <img src="{% static 'img/libert.png' %}" alt="Libertadores">
@@ -34,11 +36,122 @@
         </div> 
         <div class="jogos">
             <div class="navegarGames">
-                <i class="ri-arrow-left-s-line"></i>
-                <h2>Oitavas de Final</h2>
-                <i class="ri-arrow-right-s-line"></i>
+                <a href="{% url 'CDB' faseAnterior %}">
+                    <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <h2>{{ fase_nome }}</h2>
+                <a href="{% url 'CDB' fasePosterior %}">
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
             </div>
-            <div id="chaves-container"></div>
+            <div id="chaves-container">
+                {% for chave in partidas %}
+                    <div class="jogo" id="chave-{{ forloop.counter }}">
+                        {% if chave.partida_volta %}
+                            <div class="jogo-ida">
+                                {% with partida=chave.partida_ida %}
+                                <div class="info">
+                                    <div class="data">
+                                        {% if partida.data_realizacao and partida.hora_realizacao %}
+                                            {{ partida.data_realizacao }} {{ partida.hora_realizacao }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                    <div class="local">
+                                        {% if partida.estadio %}
+                                            {{ partida.estadio.nome_popular }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="times">
+                                    <div class="mandante">
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
+                                        {{ partida.time_mandante.nome_popular }}
+                                    </div>
+                                    <div class="placar">
+                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                    </div>
+                                    <div class="visitante">
+                                        {{ partida.time_visitante.nome_popular }}
+                                        <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                    </div>
+                                </div>
+                                {% endwith %}
+                            </div>
+                            <div class="jogo-volta">
+                                {% with partida=chave.partida_volta %}
+                                <div class="info">
+                                    <div class="data">
+                                        {% if partida.data_realizacao and partida.hora_realizacao %}
+                                            {{ partida.data_realizacao }} {{ partida.hora_realizacao }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                    <div class="local">
+                                        {% if partida.estadio %}
+                                            {{ partida.estadio.nome_popular }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="times">
+                                    <div class="mandante">
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
+                                        {{ partida.time_mandante.nome_popular }}
+                                    </div>
+                                    <div class="placar">
+                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                    </div>
+                                    <div class="visitante">
+                                        {{ partida.time_visitante.nome_popular }}
+                                        <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                    </div>
+                                </div>
+                                {% endwith %}
+                            </div>
+                        {% else %}
+                            <div class="jogo-unico">
+                                {% with partida=chave.partida_ida %}
+                                <div class="info">
+                                    <div class="data">
+                                        {% if partida.data_realizacao and partida.hora_realizacao %}
+                                            {{ partida.data_realizacao }} {{ partida.hora_realizacao }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                    <div class="local">
+                                        {% if partida.estadio %}
+                                            {{ partida.estadio.nome_popular }}
+                                        {% else %}
+                                            A definir
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="times">
+                                    <div class="mandante">
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
+                                        {{ partida.time_mandante.nome_popular }}
+                                    </div>
+                                    <div class="placar">
+                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                    </div>
+                                    <div class="visitante">
+                                        {{ partida.time_visitante.nome_popular }}
+                                        <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                    </div>
+                                </div>
+                                {% endwith %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
             <div id="loading-spinner" class="d-none">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
