@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="perfil">
+        {% load static %}
+        
+        <div class="col-md-2 profile-sidebar">
+            <img class="profile-photo" src="{% static 'img/profilePic.png' %}" alt="Profile Photo">
+            <div class="profile-name">Gabriel Almeida</div>
+            <ul class="profile-menu">
+                <li class="profile-menu-item">Configurações</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="meuTime">
+                <img class="escudos" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                <h3 class="align-items-center">Meu time do coração</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="text-center"> Últimos resultados</h3>
+                    <div class="card-body">
+                        <span class="mx-2">&emsp;Flamengo</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Flamengo.png' %}" alt="Flamengo">
+                        <span class="placar">1 - 4</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                        <span class="mx-2">Cruzeiro</span>
+                    </div>
+                    <h5 class="text-center">Brasileirão - 2° rodada</h5>
+                    <div class="card-body">
+                        <span class="mx-2">&emsp;&emsp;Grêmio</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Grêmio.png' %}" alt="Grêmio">
+                        <span class="placar">2 - 3</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                        <span class="mx-2">Cruzeiro</span>
+                    </div>
+                    <h5 class="text-center">Copa do Brasil - 1° jogo</h5>
+                    <div class="card-body">
+                        <span class="mx-2">&emsp;Corinthians</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Corinthians.png' %}" alt="Flamengo">
+                        <span class="placar">2 - 2</span>
+                        <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                        <span class="mx-2">Cruzeiro</span>
+                    </div>
+                    <h5 class="text-center">Brasileirão - 1° rodada</h5>
+                </div>
+                <div class="col-md-2 perfilCampeonatos">
+                    <h3>Classificação</h3>
+                    <div class="imgBR">
+                        <a href="{% url 'serieA' %}">
+                            <img src="{% static 'img/Brasileirão perfil.png' %}" alt="brasileirao">
+                            <h5>Brasileirão Série A</h5>
+                            <h4>4° colocado</h4>
+                        </a>
+                    </div>
+                    <div class="imgBR">
+                        <a href="{% url 'CDB' 4 %}">
+                            <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa-do-brasil">
+                            <h5>Copa do Brasil</h5>
+                            <h4>Oitavas de Final</h4>
+                        </a>
+                    </div>
+                </div>    
+                    <div class="col-md-5">
+                        <h3 class="text-center"> Próximos jogos</h3>
+                        <div class="card-body">
+                            <span class="mx-2">&emsp;Botafogo</span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Botafogo.png' %}" alt="Botafogo">
+                            <span class="placar"> X </span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                            <span class="mx-2">Cruzeiro</span>
+                        </div>
+                        <h5 class="text-center"> Brasileirão - 4°rodada</h5>
+                        <div class="card-body">
+                            <span class="mx-2">&emsp;Cruzeiro</span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                            <span class="placar"> X </span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Grêmio.png' %}" alt="Grêmio">
+                            <span class="mx-2">Grêmio</span>
+                        </div>
+                        <h5 class="text-center"> Copa do Brasil - 2° Jogo</h5>
+                        <div class="card-body">
+                            <span class="mx-2">Fluminense</span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Fluminense.png' %}" alt="Fluminense">
+                            <span class="placar"> X </span>
+                            <img class="escudperfil" src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                            <span class="mx-2">Cruzeiro</span>
+                        </div>
+                        <h5 class="text-center"> Brasileirão - 5°rodada</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

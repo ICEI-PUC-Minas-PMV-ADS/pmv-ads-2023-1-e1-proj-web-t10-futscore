@@ -24,16 +24,47 @@
                     <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
                     <h5>Copa do Brasil</h5>
                 </a>
-            </div>
-            <div>
-                <img src="{% static 'img/libert.png' %}" alt="Libertadores">
-                <h5>Libertadores</h5>
-            </div>
-            <div>
-                <img src="{% static 'img/conmebol-sul-americana.png' %}" alt="conmebol-sul-americana">
-                <h5>Sul Americana</h5> 
-            </div>            
+            </div>         
         </div> 
+        <div id="chaves-container">
+            {% for chave in partidas %}
+                <div class="jogo" id="chave-{{ forloop.counter }}">
+                    <div class="jogo-unico">
+                        {% with partida=chave.partida_ida %}
+                        <div class="info">
+                            <div class="data">
+                                {% if partida.data_realizacao and partida.hora_realizacao %}
+                                    {{ partida.data_realizacao }} {{ partida.hora_realizacao }}
+                                {% else %}
+                                    A definir
+                                {% endif %}
+                            </div>
+                            <div class="local">
+                                {% if partida.estadio %}
+                                    {{ partida.estadio.nome_popular }}
+                                {% else %}
+                                    A definir
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="times">
+                            <div class="mandante">
+                                <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
+                                {{ partida.time_mandante.nome_popular }}
+                            </div>
+                            <div class="placar">
+                                {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                            </div>
+                            <div class="visitante">
+                                {{ partida.time_visitante.nome_popular }}
+                                <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                            </div>
+                        </div>
+                        {% endwith %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         <table id="league-table">
             <thead>
                 <tr>
@@ -43,7 +74,7 @@
                     <th>PJ</th>
                     <th>VIT</th>
                     <th>E</th>
-                    <th>DER</th>
+                    <th>D</th>
                     <th>GM</th>
                     <th>GC</th>
                     <th>SG</th>

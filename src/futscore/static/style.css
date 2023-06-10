@@ -12,7 +12,7 @@ body {
 
 .campeonatos {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   text-align: center;
   border-radius: 10px;
@@ -147,15 +147,9 @@ th {
 }
 
 .profile-sidebar {
+  height: calc(100vh - 156px);
   background-color: #f8f9fa;
   border-right: 1px solid #dee2e6;
-  height: 100vh;
-}
-
-.profile-photo {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
 }
 
 .profile-name {
@@ -225,6 +219,10 @@ th {
   margin: 0;
 }
 
+.jogos .notlive {
+  margin: 0 14px;
+}
+
 .jogos .mandante,
 .jogos .visitante {
   display: flex;
@@ -274,11 +272,40 @@ th {
   align-items: center;
 }
 
-.campeonatos a {
+.campeonatos a,
+.perfilCampeonatos a {
   text-decoration: none;
   color: black;
 }
 
+.perfilCampeonatos img {
+  margin: 10px 0;
+}	
+
+.profile-name {
+  margin-top: 30px;
+}
+
+.profile-photo {
+  margin: 50px 0;
+  width: 250px;
+}
+
+@media (max-width:1700px) {
+  .profile-photo {
+    width: 150px;
+  }
+}
+
+@media (max-width:1200px) {
+  .profile-photo {
+    width: 100px;
+  }
+}
+
+.meuTime img {
+  margin-top: 10px;
+}
 .jogos .navegarGames {
   display: flex;
   justify-content: space-between;
@@ -334,7 +361,7 @@ th {
 
 .meuTime img {
   width: 200px;
-  height: 200px;
+  height: auto;
 }
 
 .escudperfil {
@@ -411,7 +438,6 @@ footer{
 }
 
 .footer-bottom{
-  margin-top: 50px;
   background: #30d152;
   width: 100vw;
   padding-top: 15px;
@@ -553,19 +579,6 @@ display: block;
 margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="password"] {
-border: 1px solid #8492A6;
-border-radius: 5px;
-box-sizing: border-box;
-display: block;
-font-size: 16px;
-margin-bottom: 20px;
-margin-left: 120px;
-padding: 10px;
-width: 50%;
-}
-
 input[type="submit"] {
 background-color: #47525E;
 border-radius: 5px;
@@ -619,6 +632,9 @@ body {
   .jogos .jogo-volta,
   .jogos .jogo-unico {
     width: 100%;
+  }
+  .campeonatos {
+    justify-content: center;
   }
 }
 

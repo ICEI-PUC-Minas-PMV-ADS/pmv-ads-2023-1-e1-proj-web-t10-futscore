@@ -24,15 +24,7 @@
                     <img src="{% static 'img/copa-do-brasil.png' %}" alt="copa do brasil">
                     <h5>Copa do Brasil</h5>
                 </a>
-            </div>
-            <div>
-                <img src="{% static 'img/libert.png' %}" alt="Libertadores">
-                <h5>Libertadores</h5>
-            </div>
-            <div>
-                <img src="{% static 'img/conmebol-sul-americana.png' %}" alt="conmebol-sul-americana">
-                <h5>Sul Americana</h5> 
-            </div>            
+            </div>        
         </div> 
         <div class="jogos">
             <div class="navegarGames">
@@ -68,15 +60,19 @@
                                 </div>
                                 <div class="times">
                                     <div class="mandante">
-                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                         {{ partida.time_mandante.nome_popular }}
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                     </div>
                                     <div class="placar">
-                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% if partida.placar_mandante and partida.placar_visitante %}
+                                            {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% else %}
+                                            x
+                                        {% endif %}
                                     </div>
                                     <div class="visitante">
-                                        {{ partida.time_visitante.nome_popular }}
                                         <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                        {{ partida.time_visitante.nome_popular }}
                                     </div>
                                 </div>
                                 {% endwith %}
@@ -101,15 +97,19 @@
                                 </div>
                                 <div class="times">
                                     <div class="mandante">
-                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                         {{ partida.time_mandante.nome_popular }}
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                     </div>
                                     <div class="placar">
-                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% if partida.placar_mandante and partida.placar_visitante %}
+                                            {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% else %}
+                                            x
+                                        {% endif %}
                                     </div>
                                     <div class="visitante">
-                                        {{ partida.time_visitante.nome_popular }}
                                         <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                        {{ partida.time_visitante.nome_popular }}
                                     </div>
                                 </div>
                                 {% endwith %}
@@ -135,15 +135,19 @@
                                 </div>
                                 <div class="times">
                                     <div class="mandante">
-                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                         {{ partida.time_mandante.nome_popular }}
+                                        <img src="{{ partida.time_mandante.escudo }}" alt="{{ partida.time_mandante.nome_popular }}">
                                     </div>
                                     <div class="placar">
-                                        {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% if partida.placar_mandante and partida.placar_visitante %}
+                                            {{ partida.placar_mandante }} x {{ partida.placar_visitante }}
+                                        {% else %}
+                                            x
+                                        {% endif %}
                                     </div>
                                     <div class="visitante">
-                                        {{ partida.time_visitante.nome_popular }}
                                         <img src="{{ partida.time_visitante.escudo }}" alt="{{ partida.time_visitante.nome_popular }}">
+                                        {{ partida.time_visitante.nome_popular }}
                                     </div>
                                 </div>
                                 {% endwith %}

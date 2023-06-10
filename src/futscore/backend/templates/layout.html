@@ -33,13 +33,13 @@
                         <a class="nav-link" href="{% url 'serieA' %}" style="font-size: 20px; font-weight: 500;">Campeonatos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Calendario.html" style="font-size: 20px; font-weight: 500;">Calendário</a>
+                        <a class="nav-link" href="{% url 'calendario' %}" style="font-size: 20px; font-weight: 500;">Calendário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Perfil.html" style="font-size: 20px; font-weight: 500;">Perfil</a>
+                        <a class="nav-link" href="{% url 'profile' %}" style="font-size: 20px; font-weight: 500;">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html" style="font-size: 20px; font-weight: 500;">Login</a>
+                        <a class="nav-link" href="{% url 'login' %}" style="font-size: 20px; font-weight: 500;">Login</a>
                     </li>
                     </ul>
                 </div>
@@ -54,6 +54,9 @@
             <div class="footer-menu">
                 <a href="{% url 'index' %}">Home</a>
                 <a href="{% url 'serieA' %}">Campeonatos</a>
+				<a href="{% url 'calendario' %}">Calendário</a>
+				<a href="{% url 'profile' %}">Perfil</a>
+				<a href="{% url 'login' %}">Login</a>
             </div>
             <div class="copyright">
                 <p>copyright &copy; <a href="#">FutScore</a></p>

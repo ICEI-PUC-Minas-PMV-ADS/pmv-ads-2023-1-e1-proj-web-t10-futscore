@@ -64,3 +64,22 @@ def CDB(request, fase):
         'fase_nome': data['nome'],
     }
     return render(request, 'tabelaCDB.html', context)
+
+def calendario(request):
+    return render(request, 'calendario.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def register(request):
+    return render(request, 'register.html')
+
+def recover(request):
+    return render(request, 'recover.html')
+
+def status(request):
+    return render(request, 'status.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
