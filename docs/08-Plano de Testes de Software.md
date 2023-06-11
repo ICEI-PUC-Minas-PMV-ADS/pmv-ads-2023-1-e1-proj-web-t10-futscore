@@ -9,7 +9,6 @@ Navegador da Internet - Chrome, Firefox ou Edge
 Conectividade de Internet para acesso às plataformas (APISs)
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
-## Ferramentas de Testes (Opcional)
 
 | **Caso de Teste** 	| **CT-01 – Cadastrar cliente** 	|
 |:---:	|:---:	|
