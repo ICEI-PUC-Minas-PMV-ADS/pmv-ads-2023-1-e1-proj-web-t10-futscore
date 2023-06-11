@@ -6,9 +6,9 @@ Casos de Teste:
 
 T01 - Tabelas
 
-![Homepage](img/tabelaA.png)
+![Homepage](img/tabelaA11.png)
 
-![Homepage](img/CopaBrasil.png)
+![Homepage](img/CopaBrasil11.png)
 
 T02 - Estatística 
 
