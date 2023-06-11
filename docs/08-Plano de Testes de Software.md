@@ -19,7 +19,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Critério de Êxito | - As tabelas foram visualizadas com sucesso. |
 
 
-| **Caso de Teste** 	| **T-02 - Estatística ** 	                |
+| **Caso de Teste** 	| **T-02 - Estatística ** 	                                                |
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-03 - O site deve exibir estatísticas dos jogos das competições . |
 | Objetivo do Teste 	| Verificar se é possivel exibir as estatísticas do jogo desejado ao clicar nele . |
