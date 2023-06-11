@@ -83,3 +83,23 @@ def status(request):
 def profile(request):
     return render(request, 'profile.html')
 
+def estatisticas(request, jogo):
+    jogos = [
+        ('Cruzeiro', '3 x 0', 'América-MG', 'Ao Vivo 88', 'Mineirão'),
+        ('Corinthians', '2 x 1', 'Atlético-MG', 'Ao Vivo 88', 'Neo Química Arena'),
+        ('Palmeiras', '1 x 1', 'Flamengo', 'Ao Vivo 23', 'Allianz Parque'),
+        ('Fluminense', '1 x 0', 'Santos', 'Ao Vivo 23', 'Maracanã'),
+    ]
+
+    jogo_atual = jogos[jogo]
+
+    context = {
+        'time1': jogo_atual[0],
+        'time2': jogo_atual[2],
+        'placar': jogo_atual[1],
+        'status': jogo_atual[3],
+        'estadio': jogo_atual[4],
+    }
+    
+    return render(request, 'estatisticas.html', context)
+

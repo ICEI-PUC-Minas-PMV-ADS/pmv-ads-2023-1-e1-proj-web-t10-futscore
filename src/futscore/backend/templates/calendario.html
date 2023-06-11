@@ -19,94 +19,102 @@
             <div class="jogos">
                 <div class="jogos">
                     <div class="jogo" id="chave-1">
-                        <div class="jogo-ida">
-                            <div>
-                                <div class="info">
-                                    <div class="data aovivo">Ao Vivo 88'</div>
-                                    <div class="local">Mineirão</div>
-                                </div>
-                                <div class="times">
-                                    <div class="mandante">
-                                        Cruzeiro
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                        <a href="{% url 'estatisticas' 0 %}">
+                            <div class="jogo-ida">
+                                <div>
+                                    <div class="info">
+                                        <div class="data aovivo">Ao Vivo 88'</div>
+                                        <div class="local">Mineirão</div>
                                     </div>
-                                    <div class="placar">3 x 0</div>
-                                    <div class="visitante">
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/América-MG.png' %}" alt="América-MG">
-                                        América-MG
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="jogo-volta">
-                            <div>
-                                <div class="info">
-                                    <div class="data aovivo">Ao Vivo 88'</div>
-                                    <div class="local">Neo Química Arena</div>
-                                </div>
-                                <div class="times">
-                                    <div class="mandante">
-                                        Corinthians
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Corinthians.png' %}" alt="Corinthians">
-                                    </div>
-                                    <div class="placar">2 x 1</div>
-                                    <div class="visitante">
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Atlético-MG.png' %}" alt="Atlético-MG">
-                                        Atlético-MG
+                                    <div class="times">
+                                        <div class="mandante">
+                                            Cruzeiro
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Cruzeiro.png' %}" alt="Cruzeiro">
+                                        </div>
+                                        <div class="placar">3 x 0</div>
+                                        <div class="visitante">
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/América-MG.png' %}" alt="América-MG">
+                                            América-MG
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="{% url 'estatisticas' 1 %}">
+                            <div class="jogo-volta">
+                                <div>
+                                    <div class="info">
+                                        <div class="data aovivo">Ao Vivo 88'</div>
+                                        <div class="local">Neo Química Arena</div>
+                                    </div>
+                                    <div class="times">
+                                        <div class="mandante">
+                                            Corinthians
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Corinthians.png' %}" alt="Corinthians">
+                                        </div>
+                                        <div class="placar">2 x 1</div>
+                                        <div class="visitante">
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Atlético-MG.png' %}" alt="Atlético-MG">
+                                            Atlético-MG
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>                
                 </div>
                 <div class="jogos">
                     <div class="jogo" id="chave-1">
-                        <div class="jogo-ida">
-                            <div>
-                                <div class="info">
-                                    <div class="data aovivo">Ao Vivo 23'</div>
-                                    <div class="local">Allianz Parque</div>
-                                </div>
-                                <div class="times">
-                                    <div class="mandante">
-                                        Palmeiras
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Palmeiras.png' %}" alt="Palmeiras">
+                        <a href="{% url 'estatisticas' 2 %}">
+                            <div class="jogo-ida">
+                                <div>
+                                    <div class="info">
+                                        <div class="data aovivo">Ao Vivo 23'</div>
+                                        <div class="local">Allianz Parque</div>
                                     </div>
-                                    <div class="placar">1 x 1</div>
-                                    <div class="visitante">
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Flamengo.png' %}" alt="Flamengo">
-                                        Flamengo
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="jogo-volta">
-                            <div>
-                                <div class="info">
-                                    <div class="data aovivo">Ao Vivo 23'</div>
-                                    <div class="local">Maracanã</div>
-                                </div>
-                                <div class="times">
-                                    <div class="mandante">
-                                        Fluminense
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Fluminense.png' %}" alt="Fluminense">
-                                    </div>
-                                    <div class="placar">1 x 0</div>
-                                    <div class="visitante">
-                                        {% load static %}
-                                        <img src="{% static 'img/escudos/Santos.png' %}" alt="Santos">
-                                        Santos
+                                    <div class="times">
+                                        <div class="mandante">
+                                            Palmeiras
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Palmeiras.png' %}" alt="Palmeiras">
+                                        </div>
+                                        <div class="placar">1 x 1</div>
+                                        <div class="visitante">
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Flamengo.png' %}" alt="Flamengo">
+                                            Flamengo
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="{% url 'estatisticas' 3 %}">
+                            <div class="jogo-volta">
+                                <div>
+                                    <div class="info">
+                                        <div class="data aovivo">Ao Vivo 23'</div>
+                                        <div class="local">Maracanã</div>
+                                    </div>
+                                    <div class="times">
+                                        <div class="mandante">
+                                            Fluminense
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Fluminense.png' %}" alt="Fluminense">
+                                        </div>
+                                        <div class="placar">1 x 0</div>
+                                        <div class="visitante">
+                                            {% load static %}
+                                            <img src="{% static 'img/escudos/Santos.png' %}" alt="Santos">
+                                            Santos
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>  
                 </div>  
                 <div class="jogo">

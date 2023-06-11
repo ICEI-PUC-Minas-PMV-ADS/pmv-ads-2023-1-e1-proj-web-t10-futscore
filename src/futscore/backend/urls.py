@@ -12,4 +12,5 @@ urlpatterns = [
     path('recover', views.recover, name='recover'),
     path('status', views.status, name='status'),
     path('profile', views.profile, name='profile'),
+    path('estatisticas/<int:jogo>', views.estatisticas, name='estatisticas'),
 ]

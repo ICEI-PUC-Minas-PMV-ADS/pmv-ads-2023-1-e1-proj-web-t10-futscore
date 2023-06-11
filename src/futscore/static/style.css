@@ -273,7 +273,8 @@ th {
 }
 
 .campeonatos a,
-.perfilCampeonatos a {
+.perfilCampeonatos a,
+.jogos .jogo a {
   text-decoration: none;
   color: black;
 }
