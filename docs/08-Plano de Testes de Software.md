@@ -23,7 +23,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-03 - O site deve exibir estatísticas dos jogos das competições . |
 | Objetivo do Teste 	| Verificar se é possivel exibir as estatísticas do jogo desejado ao clicar nele . |
-| Passos 	| - Acessar a pagina Home ou Calendário ou Perfil <br> - Clicar no icone do jogo desejado, que esta ao vivo no momento <br> |
+| Passos 	| - Acessar a pagina Home ou Calendário ou Perfil <br> - Clicar no icone do jogo desejado, que esta ao vivo no momento <br>                                  |
 |Critério de Êxito | - A pagina de estatísticas esta sendo exibida de forma correta. |
 
 | **Caso de Teste** 	| **T-03 - Calendário ** 	|
