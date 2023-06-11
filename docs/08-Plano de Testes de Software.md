@@ -11,9 +11,9 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
  
 
-| **Caso de Teste** 	| **CT-01 – Cadastrar cliente** 	|
+| **Caso de Teste** 	| **T-01 – Mudanças de tabelas** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro dos clientes para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o cliente consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://medclock.netlify.app/<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-02 - O site deve exibir tabelas das competições. |
+| Objetivo do Teste 	| Verificar se é possivel ter acesso a tabela ao clicar no icone referente ao campeonato desejado. |
+| Passos 	| - Acessar a pagina Home ou Campeonatos <br> - Clicar no icone referente ao campeonato desejado <br> |
+|Critério de Êxito | - As tabelas foram visualizadas com sucesso. |
