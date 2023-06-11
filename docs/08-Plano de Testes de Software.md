@@ -33,9 +33,28 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Passos 	| - Acessar a pagina Home <br> - Clicar no menu Calendário ou Perfil <br> - Na Pagina Calendário clicar nas setas para visualizar os jogos dos próximos dias. |
 |Critério de Êxito | - Os jogos estão presentes de acordo com o a data. |
 
-| **Caso de Teste** 	| **T-03 - Calendário ** 	|
+| **Caso de Teste** 	| **T-04 - Criação de Conta ** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04 - O site deve permitir o acesso a calendários de jogos futuros e partidas . |
-| Objetivo do Teste 	| Verificar se esta aparecendo de forma correta os jogos de cada dia do mês . |
-| Passos 	| - Acessar a pagina Home <br> - Clicar no menu Calendário ou Perfil <br> - Na Pagina Calendário clicar nas setas para visualizar os jogos dos próximos dias. |
-|Critério de Êxito | - Os jogos estão presentes de acordo com o a data. |
+|	Requisito Associado 	| RF-05 - O site deve permitir que os usuários crie sua conta . |
+| Objetivo do Teste 	| Verificar se o usuario consegue se cadastrar no site . |
+| Passos 	| - Acessar a pagina Home <br> - Clicar no menu Login <br> - Clicar no link "Não tem uma conta? Cadastre-se!"<br> - Preencher dados solicitados. |
+|Critério de Êxito | - O cadastro foi efetuado com sucesso. |
+
+
+| **Caso de Teste** 	| **T-05 - Personalização do Perfil ** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-06 - O site deve permitir que os usuários tenha acesso a sua página de perfil personalizada . |
+| Objetivo do Teste 	| Verificar se o usuario ter acesso e personalizar o seu perfil . |
+| Passos 	| - Acessar a pagina Home <br> - Clicar no menu Perfil <br> - Preencher dados solicitados. |
+|Critério de Êxito | - Ainda encontra indisponível. |
+
+| **Caso de Teste** 	| **T-06 - Responsividade do site ** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RFN-02 - O site deverá ser responsivo permitindo a visualização em um celular de forma adequada . |
+| Objetivo do Teste 	| Verificar se o site estar responsivel para celular . |
+| Passos 	| - Acessar todas as paginas do site <br> |
+|Critério de Êxito | - Todas as paginas estão responsivas. |
+
+
+
+
