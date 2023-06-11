@@ -13,48 +13,272 @@
 
     <link rel="stylesheet" href="style.css">
     <title>FutScore</title>
+    <style>
+        .jogos .jogo-volta,
+        .jogos .jogo-ida {
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(192, 192, 192);
+
+
+            padding: 0px 10px;
+            width: 600px;
+            margin-top: 50px;
+        }
+
+        #container {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin-top: 50px;
+
+        }
+
+
+        #tbestatistica {
+
+            padding: 0px;
+            border-collapse: separate;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 600px;
+        }
+
+        th {
+            text-align: center;
+            background-color: rgb(87, 87, 87);
+            text-align: center;
+            color: aliceblue;
+
+        }
+
+        td {
+
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        td.destaque {
+            background-color: rgb(87, 87, 87);
+            text-align: center;
+            color: aliceblue;
+
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <a href="/src/index.html">FutScore</a>
-                </div>
-                <div class="buttons">
-                    <ul>
-                        <li><a href="/src/index.html">Home</a></li>
-                        <li><a href="/src/tabelaSerieA.html">Campeonatos</a></li>
-                        <li><a href="/src/Calendario.html">Calendário</a></li>
-                        <li><a href="/src/Perfil.html">Perfil</a></li>
-                        <li><a href="#">Login</a></li>
+        <nav class="navbar navbar-expand-lg bg-green">
+            <div class="container-fluid container TheNavBar ms-auto">
+                <a class="navbar-brand" href="#">FutScore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"
+                        style="display: flex; justify-content: center; align-items: center;"><i
+                            class="ri-menu-line"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px; font-weight: 500;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tabelaSerieA.html"
+                                style="font-size: 20px; font-weight: 500;">Campeonatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Calendario.html"
+                                style="font-size: 20px; font-weight: 500;">Calendário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Perfil.html" style="font-size: 20px; font-weight: 500;">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" style="font-size: 20px; font-weight: 500;">Login</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="jogos">
-        <div class="jogo" id="chave-1">
-            <div class="jogo-ida">
-                <div>
-                    <div class="info">
-                        <div class="data aovivo">Ao Vivo 88'</div>
-                        <div class="local">Mineirão</div>
-                    </div>
-                    <div class="times">
-                        <div class="mandante">
-                            Cruzeiro
-                            <img src="/src/img/escudos/Cruzeiro.png" alt="Cruzeiro">
+    <div id="jogoaovivo">
+        <div class="jogos">
+            <div class="jogo" id="chave-1">
+                <div class="jogo-ida">
+                    <div>
+                        <div class="info">
+                            <div class="data aovivo">Ao Vivo 88'</div>
+                            <div class="local">Mineirão</div>
                         </div>
-                        <div class="placar">3 x 0</div>
-                        <div class="visitante">
-                            <img src="/src/img/escudos/América-MG.png" alt="América-MG">
-                            América-MG
+                        <div class="times">
+                            <div class="mandante">
+                                Cruzeiro
+                                <img src="/src/img/escudos/Cruzeiro.png" alt="Cruzeiro">
+                            </div>
+                            <div class="placar">3 x 0</div>
+                            <div class="visitante">
+                                <img src="/src/img/escudos/América-MG.png" alt="América-MG">
+                                América-MG
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
+    <div id="container">
+
+
+
+
+
+        <table id="tbestatistica">
+
+            <tr>
+
+                <th scope="col">Time A </th>
+                <th scope="col" style="width: 350px;">Estatísticas da Partida</th>
+                <th scope="col">Time B</th>
+
+            </tr>
+            <tr>
+
+
+                <td>60%</td>
+                <td class="destaque">Posse de Bola</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+
+                <td>228</td>
+                <td class="destaque">Total de Passes</td>
+                <td>235</td>
+
+            </tr>
+            <tr>
+
+                <td>83%</td>
+                <td class="destaque">Passes Certos</td>
+                <td>87%</td>
+
+            </tr>
+            <tr>
+
+                <td>40</td>
+                <td class="destaque">Passes errados</td>
+                <td>32</td>
+
+            </tr>
+            <tr>
+
+                <td>3</td>
+                <td class="destaque">Finalizações</td>
+                <td>5</td>
+
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td class="destaque">No Gol</td>
+                <td>3</td>
+
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td class="destaque">Na trave</td>
+                <td>1</td>
+
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td class="destaque">Bloqueadas</td>
+                <td>4</td>
+
+            </tr>
+            <tr>
+
+                <td>0</td>
+                <td class="destaque">Penalti</td>
+                <td>0</td>
+
+            </tr>
+            <tr>
+
+                <td>5</td>
+                <td class="destaque">Escanteios</td>
+                <td>8</td>
+
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td class="destaque">Impedimentos</td>
+                <td>3</td>
+
+            </tr>
+            <tr>
+
+                <td>0</td>
+                <td class="destaque">Total de defesas</td>
+                <td>2</td>
+
+            </tr>
+            <tr>
+
+                <td>9</td>
+                <td class="destaque">Desarmes</td>
+                <td>12</td>
+
+            </tr>
+            <tr>
+
+                <td>7</td>
+                <td class="destaque">Faltas cometidas</td>
+                <td>8</td>
+
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td class="destaque">Cartão amarelo</td>
+                <td>2</td>
+
+            </tr>
+            <tr>
+
+                <td>0</td>
+                <td class="destaque">Cartão vermelho</td>
+                <td>0</td>
+
+            </tr>
+        </table>
+
+
+    </div>
+
+
+
+
+<footer class="stickyFooter">
+    <div class="footer-bottom">
+        <div class="footer-menu">
+            <a href="/src/index.html">Home</a>
+            <a href="/src/tabelaSerieA.html">Campeonatos</a>
+            <a href="/src/Calendario.html">Calendário</a>
+            <a href="/src/Perfil.html">Perfil</a>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; <a href="#">FutScore</a></p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
+</html>
