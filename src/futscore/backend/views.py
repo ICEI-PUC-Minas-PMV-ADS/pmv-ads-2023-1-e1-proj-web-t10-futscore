@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'index.html')
 
 def serieA(request):
-    token = "81P4bUPg7JOqgRWpxyfqxELvW19jORE05eEx18FKm6BFcugyppGjqGdq68Gc"
+    token = "idLPQwNEDyK62HoZkQ4BbBpDY5vjCSe5JZOwJmxXvy2FzDD5u5fUQ76lwpx1"
     endpoint = 'https://api.sportmonks.com/v3/football/standings/live/leagues/648?include=participant;details'
 
     headers = {
@@ -20,7 +20,7 @@ def serieA(request):
     return render(request, 'tabelaSerieA.html', {'data': data})
 
 def serieB(request):
-    token = "81P4bUPg7JOqgRWpxyfqxELvW19jORE05eEx18FKm6BFcugyppGjqGdq68Gc"
+    token = "idLPQwNEDyK62HoZkQ4BbBpDY5vjCSe5JZOwJmxXvy2FzDD5u5fUQ76lwpx1"
     endpoint = 'https://api.sportmonks.com/v3/football/standings/live/leagues/651?include=participant;details'
 
     headers = {
