@@ -1,12 +1,29 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+Os resultados obtidos nos testes de software realizados:
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+Casos de Teste:
 
-## Avaliação
+**T01 - Tabelas**
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+![Homepage](img/tabelaA11.png)
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+![Homepage](img/CopaBrasil11.png)
+
+**T02 - Estatística** 
+
+![Homepage](img/Estatistica11.png)
+
+**T03 - Calendário**
+
+![Homepage](img/Calendario11.png)
+
+**T05 - Personalização do Perfil**
+
+![Homepage](img/Perfilteste1.png)
+
+**T06 - Responsividade do site**
+
+![Homepage](img/Rcalendario.png)
+
+![Homepage](img/RtabelaCopa.png)

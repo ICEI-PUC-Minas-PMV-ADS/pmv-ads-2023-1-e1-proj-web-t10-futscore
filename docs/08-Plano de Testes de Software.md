@@ -22,7 +22,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | **Caso de Teste** 	| **T-02 - Estatística ** |
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-03 - O site deve exibir estatísticas dos jogos das competições . |
-| Objetivo do Teste 	| Verificar se é possivel exibir as estatísticas do jogo desejado ao clicar nele .                 |
+| Objetivo do Teste 	| Verificar se é possivel exibir as estatísticas do jogo desejado ao clicar nele .|
 | Passos 	| - Acessar a pagina Home ou Calendário ou Perfil <br> - Clicar no icone do jogo desejado, que esta ao vivo no momento <br>  |
 |Critério de Êxito | - A pagina de estatísticas esta sendo exibida de forma correta. |
 
@@ -45,7 +45,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - O site deve permitir que os usuários tenha acesso a sua página de perfil personalizada . |
 | Objetivo do Teste 	| Verificar se o usuario ter acesso e personalizar o seu perfil . |
-| Passos 	| - Acessar a pagina Home <br> - Clicar no menu Perfil <br> - Preencher dados solicitados. |
+| Passos 	| - Acessar a pagina Home <br> - Clicar no menu Perfil <br> - Selecionar o Time do Coração <br> Clicar em "configurações". |
 |Critério de Êxito | - Ainda encontra indisponível. |
 
 | **Caso de Teste** 	| **T-06 - Responsividade do site ** 	|
