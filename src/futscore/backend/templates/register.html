@@ -44,7 +44,7 @@
           <input type="password" id="password" placeholder="Senha" name="password" required>
           <label class="label-a" for="password"></label>
           <input type="password" id="password" placeholder="Digite a senha novamente" name="password" required>
-          <input type="submit" value="Cadastrar" onclick="redirectToIndex()">
+          <input type="submit" value="Cadastrar" onclick="register()">
         </form>
         <h2 class="h2-rec"> <a class="options-text" href="{% url 'login' %}">Já tem uma conta? Faça o login</a></h2>
       </div>
@@ -53,6 +53,34 @@
     <script>
         function redirectToIndex() {
             window.location.href = "{% url 'index' %}";
+            const registerInfoValidator = (info) => {
+              if (!info.name) {
+                return false;
+              }
+              if (!info.email) {
+                return false;
+              }
+              if (!info.password) {
+                return false
+              }
+              return true;
+            };
+            
+            const register = () => {
+              const email = document.getElementById("email").value
+              const password = document.getElementById("password").value
+            
+              const infoValid = registerInfoValidator({ email, password })
+              if (infoValid) {
+                const user = {
+                  email: email,
+                  password: password,
+                }
+                localStorage.setItem('user', JSON.stringify(user))
+                return true;
+              }
+              return false;
+            };
         }
     </script>
   </body>
