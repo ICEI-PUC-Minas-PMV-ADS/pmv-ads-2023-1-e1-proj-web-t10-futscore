@@ -42,7 +42,7 @@
         <input type="text" id="email" placeholder="E-mail" name="email" required>
         <label class="label-a" for="password"></label>
         <input type="password" id="password" placeholder="Senha" name="password" required>
-        <input type="submit" value="Login" onclick="redirectToIndex()">
+        <input type="submit" value="Login" onclick="loginn()">
       </form>
       <h2 class="h2-log"> <a class="options-text" href="{% url 'recover' %}">Esqueceu a senha?</a></h3>
       <h3 class="h2-rec"> <a class="options-text" href="{% url 'register' %}">Não tem uma conta? Cadastre-se!</a></h3>
@@ -53,6 +53,38 @@
       function redirectToIndex() {
           window.location.href = "{% url 'index' %}";
       }
+      const loginInfoValidator = (info) => {
+        if (!info.email) {
+          return false;
+        }
+        if (!info.password) {
+          return false
+        }
+        return true;
+      };
+      
+      const loginn = () => {
+        const email = document.getElementById("email").value
+        const password = document.getElementById("password").value
+        console.log(email)
+        const infoValid = loginInfoValidator({ email, password })
+        if (infoValid) {
+          const user = JSON.parse(localStorage.getItem('user'))
+          console.log(user)
+          if (user.email === email || user.name === email) {
+            if (user.password === password) {
+              console.log("Logado")
+            } else {
+              console.log("Senha incorreta!")
+              return false;
+            }
+          } else {
+            console.log("Usuário não existe!")
+            return false;
+          }
+        }
+        return false;
+      };
   </script>
 </body>
 
