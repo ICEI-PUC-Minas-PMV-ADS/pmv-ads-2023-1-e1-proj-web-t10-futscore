@@ -52,6 +52,8 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 **In Progress**: Lista que contém as tarefas que estão em andamento. É importante que a equipe atualize o status das tarefas para que o Scrum Master possa acompanhar o andamento do projeto e garantir que tudo esteja caminhando conforme o planejado.
 
+**Testing**: Esta lista engloba as tarefas que estão em fase de testes. Os testadores devem verificar as funcionalidades implementadas, garantindo que estão funcionando corretamente e identificando possíveis erros para correção antes de serem movidas para a coluna "Done". Atualizações regulares nesta coluna ajudam a equipe a manter um acompanhamento preciso do progresso do projeto.
+
 **Done**: Lista que contém as tarefas que foram concluídas. É importante que a equipe atualize essa lista diariamente para que o Scrum Master possa acompanhar o progresso do projeto e garantir que as tarefas estejam sendo concluídas dentro do prazo estabelecido.
 
 O uso dessas listas permite que a equipe tenha uma visão clara do que precisa ser feito, do que já foi concluído e do que está em andamento, facilitando a colaboração e o trabalho em equipe. Além disso, o Trello também permite a atribuição de responsabilidades e prazos para cada tarefa, garantindo que o projeto esteja caminhando dentro do prazo estabelecido.
