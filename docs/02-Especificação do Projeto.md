@@ -6,27 +6,31 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras que se seguem.
 
-|            | Henrique Silva                       | Júlia Pereira                        |
-|------------|-----------------------------------|-------------------------------------|
-|            | <div align="center"><img src="https://github.com/matheudev/futscore/blob/main/docs/img/persona%201.png" width="300" title="Henrique Silva"></div> | <div align="center"><img src="https://github.com/matheudev/futscore/blob/main/docs/img/persona%202.png" width="300" title="Júlia Pereira"></div> |
-| Idade      | 28                                | 35                                  |
-| Ocupação   | Professor de Educação Física, trabalha em uma escola de ensino fundamental | Jornalista esportivo, cobre campeonatos nacionais e internacionais para uma emissora de televisão |
-| Aplicativos | ● Instagram <br> ● TikTok | ● Facebook <br> ● Linkedin |
-| Motivações | Manter-se atualizada sobre futebol, acompanhar os jogos do seu time favorito e discutir com amigos | Acompanhar jogos de futebol ao vivo, verificar tabelas e estatísticas |
-| Frustrações | Dificuldade em encontrar informações confiáveis e atualizadas sobre jogos e competições | Falta de um aplicativo completo e confiável para acompanhar jogos e competições de futebol |
-| Hobbies | ● Futebol <br> ● Viagens <br> ● Corrida | ● Futebol <br> ● Tecnologia <br> ● Culinária |
+## Gerência e Supervisão
 
-### Histórias de usuários
+| | João Almeida | Maria Oliveira |
+|-|--------------|----------------|
+| | <div align="center"><img src="img/joao.jpg" width="300" title="João Almeida"></div> | <div align="center"><img src="img/maria.jpg" width="300" title="Maria Oliveira"></div> |
+| Idade | 45 | 29 |
+| Formação | Pós-graduação em Gestão de Recursos Humanos | Graduação em Administração de Empresas |
+| Ocupação | Gerente de Recursos Humanos em uma empresa de médio porte | Supervisora de equipe em uma empresa de logística |
+| Aplicativos | • Linkedin<br>• Google Calendar<br>• Microsoft Teams<br>• Whatsapp<br>• Instagram<br>• Trello | • Linkedin<br>• Google Calendar<br>• Microsoft Teams<br>• Whatsapp<br>• Instagram<br>• Trello |
+| Motivações | João precisa de uma ferramenta eficiente para monitorar o ponto dos funcionários de sua empresa, garantindo que a conformidade com a legislação trabalhista seja mantida. Ele valoriza relatórios detalhados e a possibilidade de acessar rapidamente os registros de ponto para auditorias e tomada de decisões. | Maria precisa acompanhar a pontualidade e as horas extras de sua equipe, que trabalha em diferentes turnos. Ela busca uma ferramenta que permita verificar rapidamente as presenças e ausências dos funcionários, além de facilitar a aprovação de horas extras. |
+| Frustrações | João fica frustrado quando sistemas de controle de ponto são complicados de usar ou não oferecem suporte adequado. Ele também se preocupa com a segurança dos dados dos funcionários e com a precisão das informações registradas. | Maria se irrita quando há atrasos na atualização dos registros de ponto ou quando o sistema é inacessível em momentos críticos. Ela também se preocupa com a dificuldade de monitorar as equipes que trabalham em locais remotos. |
+| Hobbies | Ciclismo, leitura de livros sobre gestão, e viagens com a família. | Corrida, fotografia, e culinária. |
 
-A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
+## Funcionário e Diretoria
 
-| Eu como … [PERSONA] | … quero/desejo … [O QUE] | … para .... [POR QUE] |
-|---------------------|-------------------------|-----------------------|
-| Henrique Silva        | visualizar placares ao vivo de jogos de futebol | estar sempre informado sobre o andamento dos jogos |
-| Henrique Silva        | verificar tabelas e estatísticas das competições | entender melhor a performance dos times e fazer previsões |
-| Henrique Silva        | acessar informações sobre times e jogadores | aumentar seu conhecimento sobre o futebol e ter assuntos para debater com amigos |
-| Júlia Pereira        | acompanhar jogos futuros e calendário de partidas | planejar seu tempo para assistir aos jogos de seu interesse |
-| Júlia Pereira        | compartilhar informações e discutir resultados nas redes sociais | interagir com amigos e outros fãs de futebol |
+| | Lucas Ferreira | Ana Costa |
+|-|----------------|-----------|
+| | <div align="center"><img src="img/lucas.jpg" width="300" title="Lucas Ferreira"></div> | <div align="center"><img src="img/ana.jpg" width="300" title="Ana Costa"></div> |
+| Idade | 35 | 33 |
+| Formação | Técnico em Edificações | MBA em Finanças |
+| Ocupação | Funcionário de campo em uma empresa de construção civil | Diretora Financeira em uma startup |
+| Aplicativos | • Google Maps<br>• Spotify<br>• Youtube | • Excel<br>• Slack<br>• Google Drive |
+| Motivações | Lucas deseja um sistema de ponto fácil de usar diretamente no celular, que permita registrar sua entrada e saída do trabalho, mesmo quando está em diferentes locais de obra. Ele valoriza a simplicidade e rapidez no registro, além de querer acesso fácil às suas horas trabalhadas. | Ana precisa de uma ferramenta que ofereça relatórios precisos sobre o controle de ponto para que ela possa gerenciar a folha de pagamento e garantir que as horas extras estejam corretamente calculadas. Ela valoriza a possibilidade de acessar relatórios de qualquer lugar. |
+| Frustrações | Lucas fica frustrado quando o sistema de controle de ponto é complicado ou quando há falhas na conexão que impedem o registro de ponto. Ele também se preocupa com a precisão dos registros para garantir que suas horas extras sejam contabilizadas corretamente. | Ana se frustra com sistemas que não oferecem relatórios personalizados ou que não permitem uma fácil exportação dos dados para análise financeira. Ela também se preocupa com a segurança e privacidade dos dados financeiros e dos funcionários. |
+| Hobbies | Pesca, assistir a esportes, e jogar videogame. | Yoga, leitura de economia, e participação em workshops de finanças. |
 
 ### Requisitos do Projeto
 
